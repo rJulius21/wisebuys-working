@@ -1,36 +1,98 @@
 <?php get_header(); ?>
 
-  <div class="construction">
+  <div class="front-page">
 
-    <img src="<?php echo get_theme_file_uri('img/toolbox-watermark.png'); ?>" alt="" class="construction__watermark">
-
-    <div class="construction__banner">
-      <img src="<?php echo get_theme_file_uri('/img/wb-banner-mobile.png') ?>" alt="" class="construction__logo-mobile">
-      <p class="construction__slogan">
-        We are here to show you great American products that are available on the most accessible online marketplaces 
-        <br>
-        <span>Shop wisely friends</span> 
+    <div class="hero">
+      <h1 class="hero__heading">WisebuysUSA Banner</h1>
+      <p class="hero__text">
+        We show you the best products, made right here in the USA, that are available on the most popular shopping platforms
       </p>
-      <img src="<?php echo get_theme_file_uri('/img/wb-banner-desk.png') ?>" alt="" class="construction__logo-desk">
+      <p class="hero__text">Shop wisely friends</p>
     </div>
 
-      <div class="construction__message"> 
-        wiseBuysUSA.com is currently under constuction, for updates and to see great American made products, follow us on facebook!
-        <div class="construction__social-box">
-          <a target="_blank" href="https://www.facebook.com/WiseBuys-USA-107026554970992" class="construction__social-link">visit our faceBook!</a>
-        </div>
-      </div>
+    <div class="row">
+      <?php
+          while(have_posts()) {
+            the_post(); 
+        ?>
+  
+        <h6> <?php the_title(); ?> </h6>
+  
+      <?php } echo paginate_links(); ?>
+    </div>
 
+    <!-- START MENUS ROW -->
+  <div class="row">
 
-      <!-- <?php
-        while(have_posts()) {
-          the_post(); 
-      ?>
+<!-- START BRANDS CARD -->
+<div class="menu-card">
+  <div class="menu-card__header"><a href="#" class="menu-card__header-link U-center-flex">brands</a></div>
+  <div class="menu-card__content">
+    <div class="menu-card__item">
+      <img src="<?php echo get_theme_file_uri('/img/brand-logos/zippo-logo-png.png'); ?>" alt="zippo-logo" class="menu-card__item-img">
+      <p class="menu-card__item-label">zippo</p>
+    </div>
+    <div class="menu-card__item">
+      <img src="<?php echo get_theme_file_uri('/img/brand-logos/zippo-logo-png.png'); ?>" alt="zippo-logo" class="menu-card__item-img">
+      <p class="menu-card__item-label">zippo</p>
+    </div>
+    <div class="menu-card__item">
+      <img src="<?php echo get_theme_file_uri('/img/brand-logos/zippo-logo-png.png'); ?>" alt="zippo-logo" class="menu-card__item-img">
+      <p class="menu-card__item-label">zippo</p>
+    </div>
+    <div class="menu-card__item">
+      <img src="<?php echo get_theme_file_uri('/img/brand-logos/zippo-logo-png.png'); ?>" alt="zippo-logo" class="menu-card__item-img">
+      <p class="menu-card__item-label">zippo</p>
+    </div>
+    <div class="menu-card__item">
+      <img src="<?php echo get_theme_file_uri('/img/brand-logos/zippo-logo-png.png'); ?>" alt="zippo-logo" class="menu-card__item-img">
+      <p class="menu-card__item-label">zippo</p>
+    </div>
+    <div class="menu-card__item">
+      <img src="<?php echo get_theme_file_uri('/img/brand-logos/zippo-logo-png.png'); ?>" alt="zippo-logo" class="menu-card__item-img">
+      <p class="menu-card__item-label">zippo</p>
+    </div>
+  </div>
+</div>
+<!-- END BRANDS CARD -->
 
-      <h6> <?php the_title(); ?> </h6>
+<!-- START DEPARTMENTS CARD -->
+<div class="menu-card">
+  <div class="menu-card__header"><a href="#" class="menu-card__header-link U-center-flex">popular departments</a></div>
+  <div class="menu-card__content">
+    <div class="menu-card__item">
+      <img src="<?php echo get_theme_file_uri('/img/brand-logos/zippo-logo-png.png'); ?>" alt="zippo-logo" class="menu-card__item-img">
+      <p class="menu-card__item-label">zippo</p>
+    </div>
+    <div class="menu-card__item">
+      <img src="<?php echo get_theme_file_uri('/img/brand-logos/zippo-logo-png.png'); ?>" alt="zippo-logo" class="menu-card__item-img">
+      <p class="menu-card__item-label">zippo</p>
+    </div>
+    <div class="menu-card__item">
+      <img src="<?php echo get_theme_file_uri('/img/brand-logos/zippo-logo-png.png'); ?>" alt="zippo-logo" class="menu-card__item-img">
+      <p class="menu-card__item-label">zippo</p>
+    </div>
+    <div class="menu-card__item">
+      <img src="<?php echo get_theme_file_uri('/img/brand-logos/zippo-logo-png.png'); ?>" alt="zippo-logo" class="menu-card__item-img">
+      <p class="menu-card__item-label">zippo</p>
+    </div>
+    <div class="menu-card__item">
+      <img src="<?php echo get_theme_file_uri('/img/brand-logos/zippo-logo-png.png'); ?>" alt="zippo-logo" class="menu-card__item-img">
+      <p class="menu-card__item-label">zippo</p>
+    </div>
+    <div class="menu-card__item">
+      <img src="<?php echo get_theme_file_uri('/img/brand-logos/zippo-logo-png.png'); ?>" alt="zippo-logo" class="menu-card__item-img">
+      <p class="menu-card__item-label">zippo</p>
+    </div>
+  </div>
+</div>
+<!-- END DEPARTMENTS CARD -->
 
-      <?php } echo paginate_links(); ?> -->
+</div>
+<!-- END MENUS ROW -->
 
   </div>
+
+
 
 <?php get_footer(); ?>
