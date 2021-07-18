@@ -1,0 +1,57 @@
+
+h6{
+  font-size: 3rem;
+  text-transform: capitalize;
+  width: 100%;
+  text-align: center;
+}
+
+.body{
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul,li,ol,a{
+  margin: 0;
+  padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  font-weight: 300;
+}
+
+ul, ol{
+  list-style: none;
+}
+
+a{
+  font-size: 1.6rem;
+  font-weight: 400; 
+  text-decoration: none;
+  color: $text-white;
+
+  @mixin tabPort {
+    font-weight: 300;
+  }
+
+  &:hover{
+    color: $accent-light; 
+  }
+}
+
+p{
+  font-size: 1.8rem;
+  color: $black;
+  font-weight: 300;
+
+  @mixin tabPort {
+    font-weight: 300;
+  }
+}

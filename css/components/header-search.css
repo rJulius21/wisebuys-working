@@ -1,0 +1,95 @@
+.header-search { 
+  display: flex;
+  align-items:center;
+
+  width: 100%;
+
+  @mixin tabLand{
+    order: 3;
+  }
+
+  @mixin desktop{
+    width: 34%;
+  }
+  
+  &__form { 
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__input {
+    flex: 1;
+
+    padding: .6rem;
+    padding-left: 1.5rem;
+    border:none;
+    outline:none;
+    font-size: 1.4rem;
+    transition: $tr-all-fast;
+    
+    @mixin laptop{
+      border-radius: $br-sm;
+    }
+
+    @mixin desktop{
+      padding: 0.4rem .8rem;
+    }
+
+    &:focus {
+      border: 2px solid $focus-color;
+      font-size: 1.8rem;
+
+      @mixin tabPort{
+        
+      }      
+    }
+
+    &:focus ~ .header-search__submit{
+      height: 3.8rem;
+      width: 3.8rem;
+      background-color: $focus-color;
+      border: 2px solid $focus-color;
+      font-size: 1.8rem;
+      color: $focus-text;
+
+      @mixin tabLand{
+        
+      }
+    }
+  }
+
+  &__submit { 
+    background-color: $bg-light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: $bor-enhance;
+    cursor: pointer;
+    height: 2.8rem;
+    width: 2.8rem;
+    padding: 5px;
+    transition: $tr-all-fast;
+
+    @mixin tabPort{
+      padding: 6px;
+    }
+
+    @mixin desktop{
+      border-radius: 10rem;
+      margin-right: 1.5rem;
+      margin-left: 1rem;
+      padding: 8px;
+    }
+
+    &:hover, &:active {
+      background-color: $focus-color;
+    }
+  }
+
+  &__icon {
+    height: 100%;
+    width: 100%;
+  }
+}

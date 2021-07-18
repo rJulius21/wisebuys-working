@@ -1,0 +1,121 @@
+.single-company{
+  display: flex;
+  flex-wrap: wrap;
+  
+  width: 100%;
+  
+  
+  @mixin laptop{
+
+    border: $bor-li-lg;
+  }
+
+  @mixin desktop{
+    margin: 6rem auto;
+    width: $desktop;
+    box-shadow: $bs-lg;
+    border: $bor-enhance;
+  }
+
+  &__spacer{
+
+    @mixin laptop{
+      width: 100%;
+      height: 1rem;
+      background-color: $bg-dark;
+    }
+
+    @mixin desktop {
+      display: none;
+    }
+  }
+
+  &__display{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    @mixin laptop {
+      width: 45%;
+    }
+  }
+  
+  &__heading{
+    text-transform: capitalize;
+    font-size: 2.6rem;
+    font-weight: 400;
+    padding: 1rem 0;
+    background-color: $bg-dark;
+    color: $white;
+  }
+  
+  &__img-box{
+    display: flex;
+    
+    background-color: $bg-light;
+    padding: 2rem;
+  }
+  
+  &__img{
+    width: 100%;
+    padding: 1rem;
+    box-shadow: $bs-sm;
+    border: $bor-enhance;
+    border-radius: $br-sm;
+  }
+  
+  &__info-box{
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    background-color: $bg-mid;
+
+    @mixin laptop {
+      width: 55%;
+    }
+  }
+  
+  &__summary{
+    flex: 1;
+    text-align: justify;
+    
+    padding: 2rem;
+    color: $text-white;
+  }
+  
+  &__link{
+    align-self: center;
+    display: flex;
+
+    margin: 2.4rem auto;
+    padding: 1rem;
+    box-shadow: $bs-sm-white;
+    border-radius: $br-md;
+    border: $bor-enhance;
+    background-color: $accent-dark;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: $accent-light;
+    transition: $tr-all-fast;
+
+    &:hover{
+      transform: translateY(-1rem);
+      box-shadow: $bs-lg-white;
+    }
+  }
+
+  &__location{
+    
+    padding: 2rem;
+    background-color: $bg-dark;
+    color: $text-white; 
+
+    & span{
+      text-transform: capitalize;
+    }
+  }
+
+}

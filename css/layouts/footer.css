@@ -1,0 +1,101 @@
+
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+  background-color: $bg-dark;
+  color: $text-white;
+
+  &__links-section{
+    display: flex;
+    flex-direction: column;
+
+    @mixin tabLand{
+      flex-direction: row;
+    }
+  }
+  
+  &__links { 
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    padding: 1rem;
+    transition: $tr-all-fast;
+    
+    &--left { 
+      align-items: center;
+      
+      text-align: right;
+      text-align: center;
+      
+      @mixin tabLand{
+        align-items: flex-end;
+      }
+    }
+    
+    &--right{ 
+      align-items: center;
+      
+      @mixin tabLand{
+
+        align-items: flex-start;
+      }
+    }
+  }
+
+  &__link-li{
+
+    &:not(:last-child){
+      margin-bottom: 8px;
+    }
+  }
+
+  &__link {
+    padding: .2rem 1rem;
+    font-size: 1.8rem;
+    text-align: center;
+    border-radius: $br-md;
+
+    @mixin tabLand {
+      text-align: left;
+    }
+    
+    &:hover, &:active {
+      box-shadow: $bs-sm-white;
+    }
+  }
+
+  &__logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  &__logo-box { 
+    height: 1rem;
+    width: 1rem;
+    background-color: $accent-dark;
+
+    &:not(:last-child){
+      margin-right: 2rem;
+    }
+  }
+
+  &__logo {
+
+  }
+
+  &__copy {
+    display: flex;
+    justify-content: center;
+
+    padding: 2rem;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+}

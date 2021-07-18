@@ -1,0 +1,83 @@
+.menu-card{
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+  border-radius: $br-md;
+
+  @mixin laptop{
+    width: 48%;
+  }
+
+  @mixin desktop{
+    width: 56rem;
+  }
+
+  &:not(:last-child){
+    margin-bottom: 2rem;
+
+    @mixin laptop{
+      margin-bottom: 0px;
+    }
+  }
+
+  &__header{
+    
+  }
+  
+  &__header-link{
+    padding: 4px;
+    color: $white;
+    font-size: 2.4rem;
+    text-transform: capitalize;
+
+    background-color: $bg-dark;
+  }
+
+  &__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 2rem;
+    padding-bottom: 0;
+    background-color: $bg-mid;
+  }
+
+  &__item{
+    display: flex;
+    flex-direction: column;
+
+    width: 45%;
+    margin-bottom: 2rem;
+    padding: 3px;
+    background-color: $bg-light;
+    border-radius: $br-sm;
+
+    @mixin tabPort{
+      width: 22%;
+    }
+
+    @mixin tabLand{
+      width: 15%;
+    }
+
+    @mixin laptop{
+      width: 22%;
+    }
+
+    @mixin desktop{
+      width: 18%;
+    }
+  }
+  
+  &__item-img{
+    width: 100%;
+  }
+  
+  &__item-label{
+    padding: 2px;
+    text-align: center;
+    color: $black;
+  }
+}

@@ -1,0 +1,51 @@
+
+
+/* VIEWPORT SIZES */
+@define-mixin tabPort {
+  @media (min-width: 600px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin tabLand {
+  @media (min-width: 800px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin laptop {
+  @media (min-width: 960px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin desktop {
+  @media (min-width: 1200px) {
+    @mixin-content;
+  }
+}
+
+
+/*
+@mixin bg-img-center{
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+@mixin list($dir, $mr, $mb){
+  display: flex;
+  flex-direction: $dir;
+
+  &:not(:last-child){
+    margin-right: $mr;
+    margin-bottom: $mb;
+  }
+}
+*/
+
+@define-mixin bg-img-center {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}

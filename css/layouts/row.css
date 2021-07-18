@@ -1,0 +1,22 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 100%;
+  padding: 1rem;
+  border: $bor-enhance;
+
+  @mixin laptop{
+    justify-content: space-between;
+  }
+
+  &--col{
+    flex-direction: column;
+  }
+
+  &__heading {
+    width: 100%;
+    display: flex;
+    text-align: center;
+  }
+}

@@ -1,0 +1,8 @@
+.header{
+  position: sticky;
+  z-index: $z-header;
+  display: flex;
+  flex-wrap: wrap;
+
+  background-color: $bg-dark;
+}

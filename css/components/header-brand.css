@@ -1,0 +1,41 @@
+.header-brand{ 
+  display: flex;
+
+  width: 100%;
+  padding: .5rem;
+  
+  @mixin tabLand{
+    width: 50%;
+  }
+  
+  @mixin desktop{
+    width: 40%;
+    padding: 0px;
+  }
+
+  &__logo-box{
+    height: 5rem;
+    width: 5rem;
+  }
+
+  &__logo{
+    height: 100%;
+  }
+
+  &__heading{
+    flex: 1;
+    font-size: 3rem;
+    text-indent: 2rem;
+    
+    @mixin tabPort{
+      font-size: 3.4rem;
+      text-indent: 2.6rem;
+    }
+  }
+
+  &__heading-link{
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+}

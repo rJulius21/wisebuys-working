@@ -1,0 +1,83 @@
+
+
+
+
+/* DESKTOP SIZES */
+
+$desktop: 116rem;
+
+/* Z INDEXES */
+$z-modal: 10;
+$z-header: 9;
+$z-footer: 8;
+$z-link: 7;
+$z-body: 6;
+
+/* LOGO IMAGE SIZES USED AS BACKGROUND IMAGES */
+$logo-sm: 1px;
+$logo-md: 1px;
+$logo-lg: 1px;
+
+/* COLORS */
+/* https://www.colorschemer.com/color-picker/ */
+$bg-dark: #1f110b;
+$bg-mid: #645651;
+$bg-light: #e6dad6;
+
+$accent-dark: #995228;
+$accent-light: rgb(230, 202, 114);
+
+$bg-highlight:rgba(74, 197, 74, 0.336);
+$text-highlight: rgb(50, 185, 50);
+
+$black: #101010;
+$white: #eaeaea;
+
+$text-black: #101010;
+$text-white: #efefef;
+
+
+
+/* INTERACTIVE STYLES*/
+$focus-color: rgb(184, 122, 31);
+$focus-text: rgb(248, 231, 205);
+
+$tr-all-fast: all .2s;
+$tr-all-slow: all .5s;
+
+$brighten: brightness(120%); /* USE WITH filter:; PROPERTY */
+$pointer: pointer;
+
+/* BORDERS */
+$bor-dar-sm: 1px solid $bg-dark;
+$bor-dar-lg: 3px solid $bg-dark;
+
+$bor-li-sm: 1px solid $bg-light;
+$bor-li-lg: 3px solid $bg-light;
+
+$bor-enhance: 1px solid rgba(0, 0, 0, 0.26);
+
+$br-sm: 2px;
+$br-md: 5px;
+$br-lg: 12px;
+
+/* SHADOWS */
+$shadow-dark: rgba(0, 0, 0, 0.24);
+$shadow-light: rgba(255, 255, 255, 0.28);
+
+$ts-sm: 0 0 3px $shadow-dark;
+$ts-lg: 2px 2px 6px $shadow-dark;
+
+$bs-sm: 0px 0px 1.6rem 1px $shadow-dark;
+$bs-lg: 0px 0px 4rem 1px $shadow-dark;
+
+$bs-sm-white: 0px 0px 1.5rem 1px $shadow-light;
+$bs-lg-white: 0px 0px 3rem 1px $shadow-light;
+
+$bs-special: 0px 0px 5px 5px rgb(0, 0, 255) , 0px 0px 5px 10px rgb(0, 255, 0) , 0px 0px 5px 15px rgb(255, 0, 0) ;
+
+
+/* SHAPE STYLING */
+$circle-sm: 10rem;
+$circle-md: 25rem;
+$circle-lg: 60rem;

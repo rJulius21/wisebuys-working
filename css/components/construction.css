@@ -1,0 +1,129 @@
+.construction{ 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  background-color: $bg-dark;
+  box-shadow: $bs-sm-white inset;
+
+  @mixin tabLand{
+    margin: 0 auto;
+    width: 78rem;
+  }
+
+  @mixin laptop{
+    width: 94rem;
+  }
+
+  &__watermark{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); 
+    
+
+    
+    opacity: .2;
+  }
+
+  &__banner{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    background-color: none;
+    box-shadow: $bs-sm-white inset;
+    
+    @mixin tabPort {
+      flex-direction: row;
+      align-items: center;
+      
+      background-color: $bg-mid;
+    }
+
+    @mixin tabLand {
+      width: 78rem;
+      margin-top: 3rem;
+    }
+  }
+
+  &__logo-mobile{
+    width:100%;
+
+    @mixin tabPort {
+      display: none;
+    }
+  }
+
+  &__logo-desk{
+    display: none;
+    width:50%;
+
+    @mixin tabPort {
+      display: flex;
+    }
+  }
+
+  &__slogan{
+    width: 100%;
+    padding: 3rem;
+    background-color: $bg-mid;
+    color:$white;
+    text-align: center;
+    
+    @mixin tabPort {
+      padding: 3rem;
+      width: 50%;
+      background-color: transparent;
+    }
+
+    span{
+      line-height: 2.8;
+      font-size: 2.4rem;
+      text-decoration: underline;
+    }
+  }
+
+  &__message{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    width: 100%;
+    padding: 2rem;
+    color: $white;
+    background-color: $bg-mid;
+    text-align: center;
+    
+    @mixin tabPort {
+      margin: 4rem auto;
+      width: 70%;
+      box-shadow: $bs-sm-white inset;
+    }
+
+    @mixin tabLand {
+      width: 50%;
+    }
+  }
+
+  &__social-box{
+    align-self: center;
+
+    margin-top: 3rem;
+    background-color: $bg-mid;
+    box-shadow: $bs-sm-white;
+    width: max-content;
+  }
+  
+  &__social-link{
+    padding: 1.2rem 2rem;
+    background-color: $bg-mid;
+
+    &:hover,
+    &:active{
+      background-color: $bg-light;
+    }
+  }
+}
