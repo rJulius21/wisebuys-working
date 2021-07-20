@@ -7,7 +7,6 @@
   border-radius: $br-sm;
   
   &__header{
-    
     background-color: $bg-dark;
   }
   
@@ -25,7 +24,6 @@
       height: 46px;
       font-size: 1.6rem;
     }
-
     @mixin desktop{
       height: 58px;
       padding: 8px 4px;
@@ -42,7 +40,7 @@
     padding: 1rem;
   }
   
-  &__thumb-container{
+  &__thumb-box{
     flex: 1;
     display: flex;
     align-items: center;
@@ -97,6 +95,7 @@
     border: $bor-enhance;
     text-transform: capitalize;
     box-shadow: $bs-sm;
+    color: $text-black;
  
     &:hover{
       background-color: $bg-dark;

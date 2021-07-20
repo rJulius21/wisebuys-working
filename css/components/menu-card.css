@@ -41,7 +41,7 @@
 
     padding: 2rem;
     padding-bottom: 0;
-    background-color: $bg-mid;
+    background-color: $bg-light;
   }
 
   &__item{
@@ -53,6 +53,7 @@
     padding: 3px;
     background-color: $bg-light;
     border-radius: $br-sm;
+    box-shadow: $bs-sm;
 
     @mixin tabPort{
       width: 22%;

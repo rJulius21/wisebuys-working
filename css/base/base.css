@@ -19,7 +19,7 @@ html {
   margin: 0;
   padding: 0;
 
-  background-image: radial-gradient($bg-mid, $bg-light);
+  background-image: radial-gradient($bg-light, $bg-mid);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;

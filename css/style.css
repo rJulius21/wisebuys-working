@@ -22,16 +22,18 @@
 @import "components/hero";
 @import "components/menu-card";
 @import "components/product-card";
+@import "components/single-company"; 
+@import "components/single-product";
 
 @import "layouts/archive";
 @import "layouts/footer"; 
 @import "layouts/front-page"; 
-@import "layouts/full-grid"; 
+@import "layouts/product-grid"; 
+@import "layouts/product-row"; 
 @import "layouts/header"; 
 @import "layouts/index"; 
 @import "layouts/page"; 
 @import "layouts/row"; 
 @import "layouts/single"; 
-@import "layouts/single-company"; 
-@import "layouts/single-product"; 
+ 
 @import "layouts/wrapper";

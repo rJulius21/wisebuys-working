@@ -1,16 +1,74 @@
 .hero{
+  position: relative;
+
+  overflow: hidden;
   width: 100%;
-  height: 50rem;
+  height: 44rem;
 
-  background-color: green;
+  @mixin desktop {
+    height: 62rem;
+  }
+  
+  
+  &__bg-desktop{
+    position: fixed;
+    top: 5rem;
+    left: 50%;
+    z-index: $z-hero-bg;
+    transform: translateX(-50%);
+    
+    background-color: rgb(19, 2, 66);
+    height: 50rem;
 
-  &__heading{
-    font-size: 4rem;
+  @mixin desktop {
+    height: 62rem;
+  }
+  }
 
-    background-color: red;
+  &__banner-img{ 
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 8rem;
+    
+    @mixin desktop {
+      margin-top: 4rem;
+      width: inherit;
+    }
+  }
+
+  &__sub-heading{
+    position: relative;
+    z-index: $z-hero-text;
+    
+    margin-top: 2.4rem;
+    font-size: 2.6rem;
+    color: $text-white;
+    text-align: center;
+
+    background-color: transparent;
+
+    @mixin desktop{
+      margin-top: 4rem;
+      font-size: 4.4rem;
+    }
   }
 
   &__text{
+    position: relative;
+    z-index: $z-hero-text;
     
+    margin-top: 2rem;
+    padding: 0 1rem;
+    font-size: 1.8rem;
+    color: $text-white;
+    text-align: center;
+
+    background-color: transparent;
+
+    @mixin desktop{
+      margin-top: 3rem;
+      font-size: 3rem;
+    }
   }
 }

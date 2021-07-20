@@ -1,5 +1,6 @@
 .header{
   position: sticky;
+  top: 0;
   z-index: $z-header;
   display: flex;
   flex-wrap: wrap;

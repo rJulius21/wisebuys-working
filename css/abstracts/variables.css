@@ -11,7 +11,9 @@ $z-modal: 10;
 $z-header: 9;
 $z-footer: 8;
 $z-link: 7;
-$z-body: 6;
+$z-body: 4;
+$z-hero-text: 1;
+$z-hero-bg: -1;
 
 /* LOGO IMAGE SIZES USED AS BACKGROUND IMAGES */
 $logo-sm: 1px;
@@ -23,6 +25,15 @@ $logo-lg: 1px;
 $bg-dark: #1f110b;
 $bg-mid: #645651;
 $bg-light: #e6dad6;
+
+$accent-dark: #995228;
+$accent-light: rgb(230, 202, 114);
+
+/* */
+
+$bg-dark: rgb(20, 15, 41);
+$bg-mid: #8b1c10;
+$bg-light: rgb(212, 212, 233);
 
 $accent-dark: #995228;
 $accent-light: rgb(230, 202, 114);
