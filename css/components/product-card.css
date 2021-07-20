@@ -8,6 +8,7 @@
   
   &__header{
     background-color: $bg-dark;
+    border: $bor-li-sm;
   }
   
   &__header-link{
@@ -15,6 +16,7 @@
 
     height: 42px;
     padding: 4px;
+    padding-bottom: 0px;
     line-height: 1.2;
     font-size: 1.8rem;
     font-weight: 400;
@@ -30,6 +32,13 @@
       font-size: 1.8rem;
     }
   }
+
+  &__header-brand{
+    padding: 5px;
+    font-size: 1.4rem;
+    color: $accent-light;
+    text-transform: capitalize;
+  }
   
   &__body{
     flex: 1;
@@ -38,6 +47,8 @@
     
     background-color: $bg-light;
     padding: 1rem;
+    border: $bor-enhance;
+    border-top: none;
   }
   
   &__thumb-box{
@@ -96,9 +107,11 @@
     text-transform: capitalize;
     box-shadow: $bs-sm;
     color: $text-black;
- 
+    background-color: $accent-dark;
+    
     &:hover{
-      background-color: $bg-dark;
+      background-color: $accent-light;
+      color: $text-black;
     }
   } 
 }

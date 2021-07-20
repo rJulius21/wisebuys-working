@@ -17,7 +17,7 @@
     z-index: $z-hero-bg;
     transform: translateX(-50%);
     
-    background-color: rgb(19, 2, 66);
+    background-color: $bg-dark;
     height: 50rem;
 
   @mixin desktop {
@@ -33,7 +33,7 @@
     
     @mixin desktop {
       margin-top: 4rem;
-      width: inherit;
+      width: initial;
     }
   }
 

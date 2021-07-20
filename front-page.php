@@ -5,7 +5,7 @@
 
     <!-- START HERO -->
     <div class="hero">
-      <img src="<?php echo get_theme_file_uri('/img/pattern-20-15-41-clear.png'); ?>" alt="" class="hero__bg-desktop">
+      <img src="<?php echo get_theme_file_uri('/img/hat-print-202-151-85.png'); ?>" alt="" class="hero__bg-desktop">
       <img src="<?php echo get_theme_file_uri('/img/wisebuys-fullbanner-213213233.png'); ?>" alt="" class="hero__banner-img">
       <p class="hero__sub-heading">Shop wisely friends</p>
       <p class="hero__text">
@@ -13,47 +13,6 @@
       </p>
     </div>
     <!-- END HERO -->
-
-    <!-- START PRODUCT ROW -->
-    <div class="product-row">
-      <div class="prouct-row__viewport">
-
-      </div>
-
-      <?php
-        $allProductsQuery = new WP_Query(array(
-          'post_type' => 'product',
-        ));
-
-        while($allProductsQuery->have_posts()) {
-          $allProductsQuery->the_post(); 
-        ?>
-  
-        <!-- START CARD -->
-        <div class="product-card">
-
-          <div class="product-card__header">
-            <a href="<?php the_permalink(); ?>" class="product-card__header-link "><?php the_field('short_name'); ?></a>
-          </div>
-
-          <!-- START CARD BODY -->
-          <div class="product-card__body">
-
-            <div class="product-card__thumb-box">
-              <div class="product-card__thumb"><?php the_field('affiliate_thumbnail'); ?></div>
-            </div>
-
-            <p class="product-card__price">$99.99</p>
-            <a href="<?php the_permalink(); ?>" class="product-card__details-link U-center-flex">view details</a>
-          </div>
-          <!-- END CARD BODY -->
-
-        </div>
-        <!-- END CARD -->
-  
-      <?php } echo paginate_links(); ?>
-    </div>
-    <!-- END PRODUCT ROW -->
 
     <!-- START MENUS ROW -->
     <div class="row">
@@ -124,6 +83,156 @@
 
     </div>
     <!-- END MENUS ROW -->
+
+    <!-- START ROW -->
+    <div class="row">
+      
+      <!-- START PRODUCT ROW -->
+      <div class="product-row__viewport">
+  
+        <!-- START VIEWPORT -->
+        <div class="product-row">
+          <?php
+            $allProductsQuery = new WP_Query(array(
+              'post_type' => 'product',
+            ));
+    
+            while($allProductsQuery->have_posts()) {
+              $allProductsQuery->the_post(); 
+            ?>
+      
+            <!-- START CARD -->
+            <div class="product-card">
+    
+              <div class="product-card__header">
+                <a href="<?php the_permalink(); ?>" class="product-card__header-link "><?php the_field('short_name'); ?></a>
+              </div>
+    
+              <!-- START CARD BODY -->
+              <div class="product-card__body">
+    
+                <div class="product-card__thumb-box">
+                  <div class="product-card__thumb"><?php the_field('affiliate_thumbnail'); ?></div>
+                </div>
+    
+                <p class="product-card__price">$99.99</p>
+                <a href="<?php the_permalink(); ?>" class="product-card__details-link U-center-flex">view details</a>
+              </div>
+              <!-- END CARD BODY -->
+    
+            </div>
+            <!-- END CARD -->
+      
+          <?php } wp_reset_postdata(); ?>
+  
+        </div>
+        <!-- END VIEWPORT -->
+  
+      </div>
+      <!-- END PRODUCT ROW -->
+
+    </div>
+    <!-- END ROW -->
+
+    <!-- START ROW -->
+    <div class="row">
+      
+      <!-- START PRODUCT ROW -->
+      <div class="product-row__viewport">
+  
+        <!-- START VIEWPORT -->
+        <div class="product-row">
+          <?php
+            $allProductsQuery = new WP_Query(array(
+              'post_type' => 'product',
+            ));
+    
+            while($allProductsQuery->have_posts()) {
+              $allProductsQuery->the_post(); 
+            ?>
+      
+            <!-- START CARD -->
+            <div class="product-card">
+    
+              <div class="product-card__header">
+                <a href="<?php the_permalink(); ?>" class="product-card__header-link "><?php the_field('short_name'); ?></a>
+              </div>
+    
+              <!-- START CARD BODY -->
+              <div class="product-card__body">
+    
+                <div class="product-card__thumb-box">
+                  <div class="product-card__thumb"><?php the_field('affiliate_thumbnail'); ?></div>
+                </div>
+    
+                <p class="product-card__price">$99.99</p>
+                <a href="<?php the_permalink(); ?>" class="product-card__details-link U-center-flex">view details</a>
+              </div>
+              <!-- END CARD BODY -->
+    
+            </div>
+            <!-- END CARD -->
+      
+          <?php } wp_reset_postdata(); ?>
+  
+        </div>
+        <!-- END VIEWPORT -->
+  
+      </div>
+      <!-- END PRODUCT ROW -->
+
+    </div>
+    <!-- END ROW -->
+
+    <!-- START ROW -->
+    <div class="row">
+      
+      <!-- START PRODUCT ROW -->
+      <div class="product-row__viewport">
+  
+        <!-- START VIEWPORT -->
+        <div class="product-row">
+          <?php
+            $allProductsQuery = new WP_Query(array(
+              'post_type' => 'product',
+            ));
+    
+            while($allProductsQuery->have_posts()) {
+              $allProductsQuery->the_post(); 
+            ?>
+      
+            <!-- START CARD -->
+            <div class="product-card">
+    
+              <div class="product-card__header">
+                <a href="<?php the_permalink(); ?>" class="product-card__header-link "><?php the_field('short_name'); ?></a>
+              </div>
+    
+              <!-- START CARD BODY -->
+              <div class="product-card__body">
+    
+                <div class="product-card__thumb-box">
+                  <div class="product-card__thumb"><?php the_field('affiliate_thumbnail'); ?></div>
+                </div>
+    
+                <p class="product-card__price">$99.99</p>
+                <a href="<?php the_permalink(); ?>" class="product-card__details-link U-center-flex">view details</a>
+              </div>
+              <!-- END CARD BODY -->
+    
+            </div>
+            <!-- END CARD -->
+      
+          <?php } wp_reset_postdata(); ?>
+  
+        </div>
+        <!-- END VIEWPORT -->
+  
+      </div>
+      <!-- END PRODUCT ROW -->
+
+    </div>
+    <!-- END ROW -->
 
   </div>
   <!-- END FRONT-PAGE -->

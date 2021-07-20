@@ -19,6 +19,7 @@
 
       <div class="product-card__header">
         <a href="<?php the_permalink(); ?>" class="product-card__header-link "><?php the_field('short_name'); ?></a>
+        <p class="product-card__header-brand">By: <?php the_field('brand') ?></p>
       </div>
 
       <!-- START CARD BODY -->

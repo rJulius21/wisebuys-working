@@ -2,7 +2,7 @@
 
   <div class="archive">
 
-    <div class="full-grid">
+    <div class="product-grid">
       <?php
 
         while(have_posts()) {
@@ -21,7 +21,7 @@
         </div>
       </div>
 
-      <?php }?>
+      <?php } wp_reset_postdata();?>
     </div>
     
     <div class="row">

@@ -6,7 +6,12 @@
   flex-wrap: wrap;
   
   background-color: $bg-dark;
+  border-top: $bor-li-lg;
   color: $text-white;
+
+  @mixin tabLand{
+    margin-top: 5rem;
+  }
 
   &__links-section{
     display: flex;

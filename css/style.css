@@ -22,6 +22,7 @@
 @import "components/hero";
 @import "components/menu-card";
 @import "components/product-card";
+@import "components/product-row"; 
 @import "components/single-company"; 
 @import "components/single-product";
 
@@ -29,7 +30,6 @@
 @import "layouts/footer"; 
 @import "layouts/front-page"; 
 @import "layouts/product-grid"; 
-@import "layouts/product-row"; 
 @import "layouts/header"; 
 @import "layouts/index"; 
 @import "layouts/page"; 

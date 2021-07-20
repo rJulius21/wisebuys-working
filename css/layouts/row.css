@@ -4,10 +4,13 @@
 
   width: 100%;
   padding: 1rem;
-  border: $bor-enhance;
 
   @mixin laptop{
     justify-content: space-between;
+  }
+
+  @mixin desktop{
+    padding: 4rem 1rem;
   }
 
   &--col{

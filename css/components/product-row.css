@@ -1,0 +1,53 @@
+.product-row{
+
+  /* VIEWPORT IS THE FORMOST ELEMENT IN THIS COMPONENT */
+  &__viewport{
+    display: none;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: $bs-sm-white inset;
+
+    /* __viewport:padding; (SIDES) MUST = .product-row > .product-card:margin-right;*/
+    padding: 2rem;
+
+    /* WIDTH OF __viewport MUST =  
+    (.product-card:width*x) + (.product-card:margin-right*(x-1))  + (__viewport:padding-left + __viewport:padding-right) 
+    WHERE X = NUMBER OF .product-card seen through viewport*/
+    @mixin tabPort{
+      display: block;
+
+      width: 46rem;
+    }
+
+    @mixin tabLand{
+      width: 68rem;
+    }
+
+    @mixin laptop{
+      width: 90rem;
+    }
+
+    @mixin desktop{
+      width: 112rem;
+    }
+  }
+
+/* BEGIN TYPICAL CASCADE HERE */
+display: none;
+
+@mixin tabPort {
+  display: flex;
+}
+
+/* WIDTH OF .product-row MUST = 
+(.product-card:width*x) + (.product-card:margin-right*(x-1))  + (__viewport:padding-left + __viewport:padding-right) 
+WHERE X = TOTAL NUMBER OF .product-card in row*/
+width: 224rem;
+
+  & > .product-card{
+    width: 20rem;
+    margin-right: 2rem;
+    
+  }
+
+}

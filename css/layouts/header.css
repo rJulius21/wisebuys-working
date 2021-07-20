@@ -6,4 +6,6 @@
   flex-wrap: wrap;
 
   background-color: $bg-dark;
+  background-image: linear-gradient(to bottom, $bg-dark, $bg-light);
+  border-bottom: $bor-dar-lg;
 }

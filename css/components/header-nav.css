@@ -11,7 +11,7 @@
 
     padding-top: 0px;
     width: 50%;
-    background-color: $bg-dark;
+    background-color: transparent;
   }
 
   @mixin desktop{
