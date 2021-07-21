@@ -7,7 +7,7 @@
 
     <?php
       $allProductsQuery = new WP_Query(array(
-        'post_type' => 'product',
+        'post_type' => 'product'
       ));
 
       while($allProductsQuery->have_posts()) {
@@ -29,7 +29,7 @@
           <div class="product-card__thumb"><?php the_field('affiliate_thumbnail'); ?></div>
         </div>
 
-        <p class="product-card__price">$99.99</p>
+        <p class="product-card__price">$ <?php the_field('price'); ?></p>
         <a href="<?php the_permalink(); ?>" class="product-card__details-link U-center-flex">view details</a>
       </div>
       <!-- END CARD BODY -->
@@ -37,9 +37,14 @@
     </div>
     <!-- END CARD -->
 
-    <?php } wp_reset_postdata(); echo paginate_links(); ?>
+    <?php } wp_reset_postdata(); ?>
 
   </div>
   <!-- END GRID -->
+
+  <div class="row">
+    <?php echo paginate_links(); ?>
+    <h1>index</h1>
+  </div>
 
 <?php get_footer(); ?>

@@ -15,10 +15,9 @@
         ?> -->
         
         <ul class="footer__links-list">
-          <li class="footer__link-li"><a class="footer__link U-link-text" href="<?php echo site_url('/departments'); ?>">View Departments</a></li>
-          <li class="footer__link-li"><a class="footer__link U-link-text" href="<?php echo site_url('/brands'); ?>">View all Brands</a></li>
+          <li class="footer__link-li"><a class="footer__link U-link-text" href="#">View Departments</a></li>
+          <li class="footer__link-li"><a class="footer__link U-link-text" href="<?php echo get_post_type_archive_link('company'); ?>">View Brands</a></li>
           <li class="footer__link-li"><a class="footer__link U-link-text" href="<?php echo site_url('/brands'); ?>">About WisebuysUSA</a></li>
-          <li class="footer__link-li"><a class="footer__link U-link-text" href="<?php echo site_url('/brands'); ?>">View all Brands</a></li>
         </ul>
       </div>
 
