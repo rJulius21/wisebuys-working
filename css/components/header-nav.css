@@ -13,7 +13,6 @@
     width: 50%;
     background-color: transparent;
   }
-
   @mixin desktop{
     width: 26%;
   }
@@ -44,7 +43,6 @@
       border-radius: $br-sm;
       font-size: 1.7rem;
     }
-
     @mixin tabLand{
       padding: 0.5rem .8rem;
       color: $text-white;
@@ -57,11 +55,9 @@
         margin-left: 0;
       }
     }
-    
     &:not(:last-child){
       margin-right: 10px;
     }
-    
     &:last-child{
       @mixin tabLand{
         margin-right: 10px;
@@ -74,27 +70,12 @@
       cursor: pointer;
     }
   }
-  
-  &__drop-box{
-    position: relative;
-    display: flex;
-    display: none;
-    
-    height: 75vh;
-    padding: 10px;
-    background-color: $bg-dark;
-    
-    @mixin tabPort{
-      height: 58vh;
-    }
-
-    @mixin tabLand{
-      height: 45vh;
-    }
-  }
 }
 
-/* ============ WORDPRESS CLASSES ========== */
+
+/* =========================================
+============ WORDPRESS CLASSES =============
+============================================*/
 
 .menu-level-i-departments-container,
 .menu-brand-header-menu-container,
@@ -140,47 +121,3 @@
   color: $text-black;
 }
 
-/* ============ CLOSE BUTTON ========== */
-#header-nav-close{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 4px;
-  right: 4px;
-  
-  height:3.5rem;
-  width: 3.5rem;
-  cursor: pointer;
-  border-radius: 10rem;
-  box-shadow:$bs-sm-white inset;
-
-  @mixin tabPort{
-    top: 1rem;
-    right: 1rem;
-  }
-
-  &::before{
-    position: absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-
-    content:" ";
-    height: 4px;
-    width: 24px;
-    background-color: $black;
-  }
-
-  &::after{
-    position: absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%, -50%) rotate(315deg);
-
-    content:" ";
-    height: 4px;
-    width: 24px;
-    background-color: $black;;
-  }
-}

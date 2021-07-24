@@ -1,26 +1,32 @@
 
 
-
 <?php get_header(); ?>
 
 <!-- START CONTENT WRAPPER -->
 <div class="content-wrapper">
 
-  <!-- START CONSTRUCTION -->
+  <!-- START HERO -->
   <div class="construction">
 
     <img src="<?php echo get_theme_file_uri('/img/hat-print-202-151-85.png'); ?>" alt="" class="construction__bg-img">
 
-    <p class="construction__heading"> Something went wrong!!! </p>
+    <!-- START DYNAMIC INPUT -->
+    <?php
+    while(have_posts()) {
+      the_post(); 
+    ?>
+
+      <p class="construction__heading"> <?php the_title(); ?> </p>
 
       <p class="construction__message">
-        This page you're looking for doesn'y exist, sorry for the inconvenience!
+        This page is coming soon, sorry for the inconvenience!
       </p>
 
-      <a href="<?php echo site_url('/report-a-problem'); ?>" class="construction__message">Report this error</a>
+    <?php } wp_reset_postdata(); ?>
+    <!-- END DYNAMIC INPUT -->
 
   </div>
-  <!-- END CONSTRUCTION -->
+  <!-- END HERO -->
 
 </div>
 <!-- END CONTENT WRAPPER -->

@@ -15,18 +15,17 @@
         ?> -->
         
         <ul class="footer__links-list">
-          <li class="footer__link-li"><a class="footer__link U-link-text" href="<?php echo site_url('/departments'); ?>">View Departments</a></li>
-          <li class="footer__link-li"><a class="footer__link U-link-text" href="<?php echo site_url('/brands'); ?>">View all Brands</a></li>
-          <li class="footer__link-li"><a class="footer__link U-link-text" href="<?php echo site_url('/brands'); ?>">About WisebuysUSA</a></li>
-          <li class="footer__link-li"><a class="footer__link U-link-text" href="<?php echo site_url('/brands'); ?>">View all Brands</a></li>
+          <li class="footer__link-li"><a class="footer__link U-link-text" href="<?php echo site_url('/all-departments'); ?>">View Departments</a></li>
+          <li class="footer__link-li"><a class="footer__link U-link-text" href="<?php echo site_url('/company'); ?>">View Brands</a></li>
+          <li class="footer__link-li"><a class="footer__link U-link-text" href="<?php echo site_url('/about-wisebuys-usa'); ?>">About WisebuysUSA</a></li>
         </ul>
       </div>
 
       <div class="footer__links footer__links--right">
         <ul class="footer__links-list">
-          <li class="footer__link-li"><a class="footer__link U-link-text" a href="<?php echo site_url(); ?>">Report Site Issue</a></li>
-          <li class="footer__link-li"><a class="footer__link U-link-text" a href="<?php echo site_url(); ?>">Report Non-American product</a></li>
-          <li class="footer__link-li"><a class="footer__link U-link-text" a href="<?php echo site_url(); ?>">Report Product not Available</a></li>
+          <li class="footer__link-li"><a class="footer__link U-link-text" a href="<?php echo site_url('/report-a-problem'); ?>">Report Site Issue</a></li>
+          <li class="footer__link-li"><a class="footer__link U-link-text" a href="<?php echo site_url('/report-a-problem'); ?>">Report Non-American product</a></li>
+          <li class="footer__link-li"><a class="footer__link U-link-text" a href="<?php echo site_url('/report-a-problem'); ?>">Report Product not Available</a></li>
         </ul>
       </div>
     </div>

@@ -15,7 +15,7 @@
         </div>
         <div class="company-card__body">
           <div class="company-card__thumb-container">
-            <img src="<?php the_field('large_logo'); ?>" alt="brand-logo" class="company-card__thumb">
+            <img src="<?php the_field('company_logo'); ?>" alt="company-logo" class="company-card__thumb">
         </div>
           <a href="<?php the_permalink(); ?>" class="company-card__btn-link U-center-flex">company profile</a>
         </div>

@@ -34,49 +34,7 @@
       <!-- END SEARCH -->
 
       <!-- START HEADER NAV -->
-      <div class="header-nav">
-
-        <div class="header-nav__switch-box">
-          <div class="header-nav__switch-btn">Departments</div>
-          <div class="header-nav__switch-btn">Brands</div>
-          <div class="header-nav__switch-btn">Other</div>
-        </div>
-
-        <!-- START NAV DROP BOX -->
-        <div class="header-nav__drop-box">
-          <div id="header-nav-close"></div>
-          
-          <div id="headerDepartmentsMenu" class="header-nav__link-list">
-            <?php
-              //This code tells wordpress to register a menu location here that is managed in the wordpress dashboard
-              wp_nav_menu(array(
-                'theme_location' => 'departmentHeaderMenu'
-              ));
-            ?>
-          </div>
-
-          <div id="headerBrandsMenu" class="header-nav__link-list">
-            <?php
-              //This code tells wordpress to register a menu location here that is managed in the wordpress dashboard
-              wp_nav_menu(array(
-                'theme_location' => 'brandHeaderMenu'
-              ));
-            ?>
-          </div>
-
-          <div id="headerOtherMenu" class="header-nav__link-list">
-            <?php
-              //This code tells wordpress to register a menu location here that is managed in the wordpress dashboard
-              wp_nav_menu(array(
-                'theme_location' => 'otherHeaderMenu'
-              ));
-            ?>
-          </div>
-          
-        </div>
-        <!-- END NAV DROP BOX -->
-                                          
-      </div>
+      <?php include 'header-parts/header-nav.php'; ?>
       <!-- END HEADER NAV -->
 
       </header>

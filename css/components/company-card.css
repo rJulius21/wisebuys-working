@@ -71,9 +71,12 @@
     border: $bor-enhance;
     text-transform: capitalize;
     box-shadow: $bs-sm;
- 
+    color: $text-black;
+    background-color: $accent-dark;
+    
     &:hover{
-      background-color: $bg-dark;
+      color: $text-black;
+      background-color: $accent-light;
     }
   } 
 }
