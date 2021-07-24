@@ -106,12 +106,13 @@
     text-align: center;
     text-transform: capitalize;
     font-size: 2rem;
-    color: $accent-light;
+    color: $text-black;
     transition: $tr-all-fast;
 
     &:hover{
       transform: translateY(-1rem);
       box-shadow: $bs-lg-white;
+      background-color: $accent-light;
     }
   }
 

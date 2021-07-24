@@ -1,0 +1,42 @@
+.company-link{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  width: 14rem;
+  margin-bottom: 2rem;
+  padding: 4px;
+  background-color: $bg-light;
+  border: $bor-dar-sm;
+  border-radius: $br-sm;
+
+  &__logo-box{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+  }
+
+  &__logo{
+    width: 100%;
+  }
+
+  &__label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 32px;
+    margin-top: 4px;
+    background-color: $accent-dark;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    text-align: center;
+
+    @mixin tabPort{
+      height: 42px;
+    }
+  }
+}

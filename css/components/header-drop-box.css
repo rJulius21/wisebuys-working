@@ -1,0 +1,73 @@
+.header-drop-box{
+  position: fixed;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  display: none;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  
+  overflow-y: scroll;
+  height: 75vh;
+  width: 95%;
+  padding: 10px;
+  padding-top: 6.5rem;
+  background-color: $bg-dark-translucent;
+  border: $bor-li-lg;
+  
+  @mixin tabPort{
+    top: 150px;
+
+    height: 66vh;
+  }
+  @mixin tabLand{
+    top: 110px;
+
+    height: 45vh;
+  }
+}
+
+/* =========================================
+=============== CLOSE BUTTON ===============
+============================================*/
+.header-drop-box-close{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  
+  height:4.5rem;
+  width: 4.5rem;
+  cursor: pointer;
+  border-radius: $circle-sm;
+  border: $bor-enhance;
+  box-shadow:$bs-sm-white inset;
+
+  @mixin tabPort{
+    top: 1rem;
+    right: 1rem;
+  }
+
+  &::before, &::after{
+    position: absolute;
+    top: 50%;
+    left:50%;
+
+    content:" ";
+    height: 4px;
+    width: 24px;
+    background-color: $bg-mid;
+  }
+
+  &::before{
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &::after{
+    transform: translate(-50%, -50%) rotate(315deg);
+  }
+}

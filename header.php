@@ -34,7 +34,7 @@
       <!-- END SEARCH -->
 
       <!-- START HEADER NAV -->
-      <?php include 'header-nav.php'; ?>
+      <?php include 'header-parts/header-nav.php'; ?>
       <!-- END HEADER NAV -->
 
       </header>

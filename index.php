@@ -1,50 +1,28 @@
 
 
+
 <?php get_header(); ?>
 
-  <!-- START GRID -->
-  <div class="product-grid">
+<!-- START CONTENT WRAPPER -->
+<div class="content-wrapper">
 
-    <?php
-      $allProductsQuery = new WP_Query(array(
-        'post_type' => 'product'
-      ));
+  <!-- START CONSTRUCTION -->
+  <div class="construction">
 
-      while($allProductsQuery->have_posts()) {
-        $allProductsQuery->the_post(); 
-    ?>
+    <img src="<?php echo get_theme_file_uri('/img/hat-print-202-151-85.png'); ?>" alt="" class="construction__bg-img">
 
-    <!-- START CARD -->
-    <div class="product-card">
+    <p class="construction__heading"> Something went wrong!!! </p>
 
-      <div class="product-card__header">
-        <a href="<?php the_permalink(); ?>" class="product-card__header-link "><?php the_field('short_name'); ?></a>
-        <p class="product-card__header-brand">By: <?php the_field('brand') ?></p>
-      </div>
+      <p class="construction__message">
+        This page you're looking for doesn'y exist, sorry for the inconvenience!
+      </p>
 
-      <!-- START CARD BODY -->
-      <div class="product-card__body">
-
-        <div class="product-card__thumb-box">
-          <div class="product-card__thumb"><?php the_field('affiliate_thumbnail'); ?></div>
-        </div>
-
-        <p class="product-card__price">$ <?php the_field('price'); ?></p>
-        <a href="<?php the_permalink(); ?>" class="product-card__details-link U-center-flex">view details</a>
-      </div>
-      <!-- END CARD BODY -->
-
-    </div>
-    <!-- END CARD -->
-
-    <?php } wp_reset_postdata(); ?>
+      <a href="<?php echo site_url('/report-a-problem'); ?>" class="construction__message">Report this error</a>
 
   </div>
-  <!-- END GRID -->
+  <!-- END CONSTRUCTION -->
 
-  <div class="row">
-    <?php echo paginate_links(); ?>
-    <h1>index</h1>
-  </div>
+</div>
+<!-- END CONTENT WRAPPER -->
 
 <?php get_footer(); ?>

@@ -1,18 +1,34 @@
+
+
 <?php get_header(); ?>
 
-  <div class="box">
+<!-- START CONTENT WRAPPER -->
+<div class="content-wrapper">
 
-    <h6>page</h6>
+  <!-- START CONSTRUCTION -->
+  <div class="construction">
 
+    <img src="<?php echo get_theme_file_uri('/img/hat-print-202-151-85.png'); ?>" alt="" class="construction__bg-img">
+
+    <!-- START DYNAMIC INPUT -->
     <?php
-      while(have_posts()) {
-        the_post(); 
+    while(have_posts()) {
+      the_post(); 
     ?>
 
-    <h6> <?php the_title(); ?> </h6>
+      <p class="construction__heading"> <?php the_title(); ?> </p>
 
-    <?php } echo paginate_links(); ?>
+      <p class="construction__message">
+        This page is coming soon, sorry for the inconvenience!
+      </p>
+
+    <?php } wp_reset_postdata(); ?>
+    <!-- END DYNAMIC INPUT -->
 
   </div>
+  <!-- END CONSTRUCTION -->
+
+</div>
+<!-- END CONTENT WRAPPER -->
 
 <?php get_footer(); ?>
