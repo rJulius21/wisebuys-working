@@ -51,6 +51,7 @@
     justify-content: stretch;
 
     width: 45%;
+    height: 5rem;
     margin-bottom: 2rem;
     padding: 3px;
     background-color: $bg-light;

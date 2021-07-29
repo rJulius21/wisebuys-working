@@ -43,13 +43,13 @@ $accent-light: rgb(230, 202, 114);
 
 /* UNIVERSAL COLORS */
 
-$bg-highlight:rgba(74, 197, 74, 0.336);
+$bg-highlight:rgb(125, 243, 125);
 $text-highlight: rgb(50, 185, 50);
 
 $black: #101010;
 $white: #eaeaea;
 
-$text-black: #101010;
+$text-black: #110830;
 $text-white: #efefef;
 
 

@@ -1,4 +1,5 @@
 .single-product{
+  position: relative;  
   display: flex;
   flex-direction: column;
 
@@ -104,20 +105,71 @@
     flex-wrap: wrap;
 
     width: 100%;
+    background-color: $accent-light;
   }
 
-  &__price{
+  &__buy-link{
     display: flex;
     align-items: center;
     justify-content: center;
 
     width: 100%;
     padding: 1rem;
-    background-color: $bg-highlight;
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: $text-black;
+    transition: transform .2s;
+    background-color: $accent-dark;
+
+    @mixin tabPort {
+      width: 50%;
+    }
+    @mixin tabLand {
+      width: 100%;
+    }
+    @mixin desktop{
+      align-self: center;
+
+      width: 55%;
+      margin-left: 1rem;
+    }
+
+    &:hover{
+      filter: $brighten;
+      color: $text-black;
+    }
+  }
+
+  &__price-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    //background-color: $bg-light;
+    padding: 1rem;
+
+    @mixin tabPort{
+      flex-direction: row;
+    }
+    @mixin tabLand{
+      flex-direction: column;
+    }
+    @mixin tabLand{
+      flex-direction: row;
+    }
+  }
+  
+  &__price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
     color: $text-highlight;
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     font-weight: 400;
     letter-spacing: 1px;
+    background-color: $bg-highlight;
 
     @mixin tabPort {
       width: 50%;
@@ -129,19 +181,15 @@
       width: 35%;
     }
   }
-  
-  &__buy-link{
+
+  &__price-disclaimer{
     display: flex;
     align-items: center;
     justify-content: center;
 
-    width: 100%;
-    padding: 1rem;
-    background-color: $accent-dark;
-    text-transform: capitalize;
-    font-size: 2rem;
-    color: $accent-light;
-    transition: transform .2s;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: $text-highlight;
 
     @mixin tabPort {
       width: 50%;
@@ -149,14 +197,66 @@
     @mixin tabLand {
       width: 100%;
     }
-    @mixin desktop{
-      align-self: center;
-
+    @mixin desktop {
       width: 65%;
     }
+  }
+
+  &__disclaimer-label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: $accent-light;
+    text-decoration: underline;
+    background-color: $bg-dark;
+    padding: 4px 8px;
+    border-radius: $br-md;
+    transition: $tr-all-fast;
+    cursor: $pointer;
+    margin: 2rem auto;
+    box-shadow: $bs-sm;
+    user-select: none;
 
     &:hover{
-      filter: $brighten;
+      transform: scale(1.1);
     }
   }
+
+  &__disclaimer-text{
+    display: none;
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: $accent-light;
+    padding: 1rem;
+    width: 90%;
+    margin-bottom: 2rem;
+    box-shadow: $bs-sm;
+    border-radius: $br-md;
+    font-size: 1.4rem;
+
+    @mixin tabPort {
+      margin-top: 3rem; 
+    }
+    @mixin tabLand {
+      margin-top: 0rem; 
+    }
+  }
+}
+
+#productDisclaimer{
+  display: none;
+}
+
+#productDisclaimer:checked ~ .single-product__disclaimer-text{
+  display: flex;
+}
+
+#productDisclaimer:checked ~ .single-product__disclaimer-label{
+  transform: scale(1.1);
+  background-color: $accent-light;
+  color: $bg-mid;
 }

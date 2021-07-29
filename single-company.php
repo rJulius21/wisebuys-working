@@ -24,6 +24,15 @@
   <div class="single-company__info-box">
     <p class="single-company__summary"><?php the_field('company_summary'); ?></p>
     <a href="<?php the_field('company_link'); ?>" class="single-company__link" target="_blank"><?php the_title(); ?> website</a>
+    <!-- work -->
+    <input type="checkbox" name="productDisclaimer" id="productDisclaimer">
+      <label for="productDisclaimer" class="single-product__disclaimer-label">What's an affiliate link?</label>
+      <p class="single-product__disclaimer-text">
+        Affiliate links cost you absolutely nothing to use!
+        <br> <br>
+        We use affiliate links on WisebuysUSA.com to earn a small commison on the quality American products that we show you on the site. Without these links, this site would not be able to operate, thanks for visiting!
+      </p>
+    <!-- work -->
   </div>
 
   <?php } wp_reset_postdata(); ?>
