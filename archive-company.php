@@ -2,6 +2,10 @@
 
   <div class="archive">
 
+    <div class="row--paginate">
+      <?php  echo paginate_links(); ?>
+    </div>
+
     <div class="product-grid">
       <?php
 
@@ -9,6 +13,7 @@
           the_post(); 
       ?>
 
+      <!-- START COMPANY CARD -->
       <div class="company-card">
         <div class="company-card__header">
           <a href="<?php the_permalink(); ?>" class="company-card__header-link "><?php the_title(); ?></a>
@@ -20,13 +25,13 @@
           <a href="<?php the_permalink(); ?>" class="company-card__btn-link U-center-flex">company profile</a>
         </div>
       </div>
+      <!-- END COMPANY CARD -->
 
       <?php } wp_reset_postdata();?>
     </div>
     
-    <div class="row">
+    <div class="row--paginate">
       <?php  echo paginate_links(); ?>
-
     </div>
 
   </div>

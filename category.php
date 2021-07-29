@@ -4,9 +4,12 @@
 
 <!-- START ARCHIVE -->
 <div class="archive">
-  <?php the_archive_title(); ?>
+  
+  <div class="row--paginate">
+    <?php the_archive_title(); ?>
+  </div>
 
-  <div class="row">
+  <div class="row--paginate">
     <?php echo paginate_links();  ?>
   </div>
   
@@ -48,7 +51,7 @@
   </div>
   <!-- END GRID -->
 
-  <div class="row">
+  <div class="row--paginate">
     <?php echo paginate_links();  ?>
   </div>
 

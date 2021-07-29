@@ -38,8 +38,7 @@
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: flex-start;
+    justify-content: space-around;
 
     padding: 2rem;
     padding-bottom: 0;
@@ -48,7 +47,8 @@
 
   &__item{
     display: flex;
-    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
 
     width: 45%;
     margin-bottom: 2rem;
@@ -70,7 +70,22 @@
     }
 
     @mixin desktop{
-      width: 18%;
+      width: 24%;
+    } 
+  }
+
+  &__item-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+    color: $text-black;
+
+    &:hover{
+      color: $accent-dark;
     }
   }
   
@@ -83,8 +98,4 @@
     text-align: center;
     color: $black;
   }
-}
-
-.menu-card > .company-link{
-  justify-self: space-between;
 }

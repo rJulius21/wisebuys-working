@@ -15,7 +15,7 @@
         ?> -->
         
         <ul class="footer__links-list">
-          <li class="footer__link-li"><a class="footer__link U-link-text" href="<?php echo site_url('/all-departments'); ?>">View Departments</a></li>
+          <li class="footer__link-li"><a class="footer__link U-link-text" href="<?php echo site_url('/all-departments'); ?>">View Categories</a></li>
           <li class="footer__link-li"><a class="footer__link U-link-text" href="<?php echo site_url('/company'); ?>">View Brands</a></li>
           <li class="footer__link-li"><a class="footer__link U-link-text" href="<?php echo site_url('/about-wisebuys-usa'); ?>">About WisebuysUSA</a></li>
         </ul>
@@ -46,7 +46,7 @@
     </div>
     <!-- END LOGOS -->
       
-    <a class="footer__copy" href="<?php site_url(); ?>">WisebuysUSA.com &copy; 2021</a>
+    <a class="footer__copy" href="<?php echo site_url(); ?>">WisebuysUSA.com &copy; 2021</a>
 
   </div>
 </footer>

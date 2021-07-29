@@ -14,7 +14,7 @@
     <p class="construction__heading"> Something went wrong!!! </p>
 
       <p class="construction__message">
-        This page you're looking for doesn'y exist, sorry for the inconvenience!
+        The page you're looking for doesn't exist, sorry for the inconvenience!
       </p>
 
       <a href="<?php echo site_url('/report-a-problem'); ?>" class="construction__message">Report this error</a>

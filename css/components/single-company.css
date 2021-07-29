@@ -112,7 +112,7 @@
     &:hover{
       transform: translateY(-1rem);
       box-shadow: $bs-lg-white;
-      background-color: $accent-light;
+      background-color: $accent-dark;
     }
   }
 

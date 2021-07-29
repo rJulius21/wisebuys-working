@@ -1,7 +1,7 @@
 <div class="header-nav">
 
         <div class="header-nav__switch-box">
-          <div id="openBtnCat" class="header-nav__switch-btn">Departments</div>
+          <div id="openBtnCat" class="header-nav__switch-btn">Categories</div>
           <div id="openBtnCom" class="header-nav__switch-btn">Brands</div>
           <div id="openBtnOth" class="header-nav__switch-btn">Other</div>
         </div>
@@ -49,7 +49,6 @@
 
         
         <!-- START OTHER DROP BOX -->
-        <!-- ADD 'header-parts/header-nav-other.php' HERE -->
         <div class="header-drop-box" id="dropboxOth" >
           <div id="closeBtnOth" class="header-drop-box-close"></div>
 

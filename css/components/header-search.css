@@ -3,17 +3,25 @@
   align-items:center;
 
   width: 100%;
-
+  
   @mixin tabLand{
     order: 3;
   }
-
   @mixin desktop{
     width: 34%;
   }
   
   &__form { 
     flex: 1;
+    display: flex;
+  }
+
+  &__form-label { 
+
+  }
+
+  &__input-group { 
+    width: 100%;
     display: flex;
     justify-content: space-between;
   }
@@ -31,7 +39,6 @@
     @mixin laptop{
       border-radius: $br-sm;
     }
-
     @mixin desktop{
       padding: 0.4rem .8rem;
     }
@@ -46,8 +53,6 @@
     }
 
     &:focus ~ .header-search__submit{
-      height: 3.8rem;
-      width: 3.8rem;
       background-color: $focus-color;
       border: 2px solid $focus-color;
       font-size: 1.8rem;
@@ -67,15 +72,12 @@
 
     border: $bor-enhance;
     cursor: pointer;
-    height: 2.8rem;
-    width: 2.8rem;
     padding: 5px;
     transition: $tr-all-fast;
 
     @mixin tabPort{
       padding: 6px;
     }
-
     @mixin desktop{
       border-radius: 10rem;
       margin-right: 1.5rem;
@@ -86,6 +88,7 @@
     &:hover, &:active {
       background-color: $focus-color;
     }
+
   }
 
   &__icon {

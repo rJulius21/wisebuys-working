@@ -8,13 +8,22 @@
   @mixin laptop{
     justify-content: space-between;
   }
-
   @mixin desktop{
     padding: 4rem 1rem;
   }
-
+  
   &--col{
     flex-direction: column;
+  }
+
+  &--paginate{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & *:not(:last-child){
+      margin-right: 2rem;
+    }
   }
 
   &__heading {

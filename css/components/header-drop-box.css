@@ -3,8 +3,6 @@
   top: 120px;
   left: 50%;
   transform: translateX(-50%);
-  display: flex;
-  display: flex;
   display: none;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -30,9 +28,13 @@
   }
 }
 
+
 /* =========================================
 =============== CLOSE BUTTON ===============
 ============================================*/
+
+
+
 .header-drop-box-close{
   display: flex;
   align-items: center;
@@ -62,7 +64,7 @@
     height: 4px;
     width: 24px;
     background-color: $bg-mid;
-  }
+  } 
 
   &::before{
     transform: translate(-50%, -50%) rotate(45deg);
@@ -71,4 +73,97 @@
   &::after{
     transform: translate(-50%, -50%) rotate(315deg);
   }
+
+  
 }
+
+/*================================
+======WORDPRESS CLASSES===========
+=================================*/
+
+
+
+/*==================================
+========= CATEGORIES BOX ===========
+==================================*/
+
+.menu-header-categories-container{
+  display: flex;
+
+  text-transform: capitalize;
+  width: 100%;
+}
+
+#menu-header-categories{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+
+  width: 100%;
+
+  @mixin tabPort {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @mixin tabLand {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @mixin laptop {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  @mixin desktop {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  & .menu-item-object-category > a{
+    font-size: 2rem;
+  }
+
+  & .menu-item-object-category .sub-menu li > a{
+    font-size: 1.6rem;
+  }
+}
+
+.menu-item-object-category{
+display: flex;
+flex-direction: column;
+
+background-color: $bg-mid;
+padding: 4px;
+
+& .sub-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 1.6rem;
+
+  & li{
+    width: 100%;
+  }
+}
+}
+
+/*==================================
+============ OTHER BOX =============
+==================================*/
+
+.menu-header-other-container{
+  display: flex;
+
+  width: 100%;
+}
+
+#menu-header-other{
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item-object-page{
+  display: flex;
+  
+  margin-bottom: 1rem;
+
+  & a{
+    font-size: 2.4rem;
+  }
+  }

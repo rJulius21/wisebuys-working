@@ -24,12 +24,7 @@
 
       <!-- START SEARCH -->
       <div class="header-search">
-        <form action="#" class="header-search__form">
-          <input type="text" class="header-search__input" placeholder="Search...">
-          <button class="header-search__submit">
-            <img class="header-search__icon" src="<?php echo get_theme_file_uri('img/png-icons/search.png')?>" alt="search-icon">
-          </button>
-        </form>
+        <?php include 'header-parts/searchform.php' ?>
       </div>
       <!-- END SEARCH -->
 

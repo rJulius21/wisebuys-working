@@ -10,25 +10,30 @@
   @mixin tabPort{
     grid-template-columns: repeat(3, 1fr);
   }
-
   @mixin tabLand{
     grid-gap: 2rem;
 
     padding: 2rem;
   }
-
   @mixin laptop{
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem;
 
     padding: 1rem;
   }
-
   @mixin desktop{
     grid-gap: 2rem;
 
     margin: 0 auto;
     width: 114rem;
     padding: 2rem;
+  }
+
+  &__message{
+    grid-column: 1 / -1;
+    text-align: center;
+    background-color: $bg-dark;
+    font-size: 2.4rem;
+    color: $accent-dark;
   }
 }

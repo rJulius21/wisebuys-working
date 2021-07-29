@@ -62,6 +62,7 @@ class HeaderMenus {
 
   openBoxCat() {
     this.dropboxCat.style.display = 'flex';
+    console.log('wahappen');
   }
   closeBoxCat() {
     this.dropboxCat.style.display = 'none';
