@@ -32,6 +32,6 @@ add_action('after_setup_theme', 'site_features');
 add_filter('ai1wm_exclude_content_from_export', 'ignoreCertainFiles');
 
 function ignoreCertainFiles($exclude_filters) {
-  $exclude_filters[] = 'themes/wisebuys-working/node_modules';
+  $exclude_filters[] = 'themes/wisebuys-dev/node_modules';
   return $exclude_filters;
 }
