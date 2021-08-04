@@ -3,7 +3,7 @@
 
 <!-- START CARD HEADER -->
 <div class="product-card__header">
-  <a href="<?php the_permalink(); ?>" class="product-card__header-link "><?php the_title(); ?></a>
+  <a href="<?php the_permalink(); ?>" class="product-card__header-link "><?php the_field('post_short_name') ?></a>
   <p class="product-card__header-brand">By: <?php the_field('post_brand') ?></p>
 </div>
 <!-- END CARD HEADER -->
