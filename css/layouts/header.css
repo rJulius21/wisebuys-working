@@ -5,7 +5,8 @@
   display: flex;
   flex-wrap: wrap;
 
+  /* background-image: linear-gradient(to bottom, $bg-dark, $bg-light); */
   background-color: $bg-dark;
-  background-image: linear-gradient(to bottom, $bg-dark, $bg-light);
   border-bottom: $bor-dar-lg;
+  box-shadow: 0 0 20px 0 $bg-light inset;
 }

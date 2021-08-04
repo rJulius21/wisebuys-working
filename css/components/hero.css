@@ -4,6 +4,7 @@
   margin-bottom: 6rem;
 
   @mixin desktop {
+    
   }
   
   /*
@@ -31,21 +32,27 @@
     transform: translateX(-50%);
     display: block;
 
-    width: 150%;
     margin: 113px auto 0;
 
+    @mixin tabLand{
+      margin-top: 102px;
+    }
     @mixin desktop{
-      margin: 8rem auto 0;
+      margin-top: 80px;  
     }
   }
 
   &__text-box{
     width: 80%;
-    margin: 6.5rem auto 0;
+    margin: 0 auto;
+    margin-top: 22rem;
     padding: 1rem;
     background-color: rgba($bg-mid, .5);
-    box-shadow: $bs-sm-white inset;
+    box-shadow: $bs-sm-white inset, $bs-sm-white;
 
+    @mixin tabLand {
+      margin-top: 26rem;
+    }
     @mixin desktop {
       margin-top: 30rem;
       padding: 4rem 1rem;
@@ -60,6 +67,7 @@
     font-size: 2.2rem;
     color: $text-white;
     text-align: center;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
 
     background-color: transparent;
 
@@ -77,7 +85,7 @@
     font-size: 1.6rem;
     color: $text-white;
     text-align: center;
-
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
     background-color: transparent;
 
     @mixin desktop{

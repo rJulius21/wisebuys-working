@@ -8,7 +8,6 @@
   @mixin laptop{
     width: 48%;
   }
-  
   @mixin desktop{
     width: 56rem;
   }
@@ -53,7 +52,6 @@
     width: 45%;
     height: 5rem;
     margin-bottom: 2rem;
-    padding: 3px;
     background-color: $bg-light;
     border-radius: $br-sm;
     box-shadow: $bs-sm;
@@ -61,18 +59,19 @@
     @mixin tabPort{
       width: 22%;
     }
-
     @mixin tabLand{
       width: 15%;
     }
-
     @mixin laptop{
       width: 22%;
     }
-
     @mixin desktop{
       width: 24%;
     } 
+
+    &:hover{
+      background-color: $bg-dark;
+    }
   }
 
   &__item-link{

@@ -2,8 +2,8 @@
 
 <?php get_header(); ?>
 
-<!-- START ARCHIVE -->
-<div class="archive">
+<!-- START PAGE -->
+<div class="page">
   
   <div class="row--paginate">
     <?php the_archive_title(); ?>
@@ -56,6 +56,6 @@
   </div>
 
 </div>
-<!-- END ARCHIVE -->
+<!-- END PAGE -->
 
 <?php get_footer(); ?>

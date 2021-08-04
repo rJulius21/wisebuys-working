@@ -24,10 +24,11 @@
     width: 6rem;
     border-radius: $circle-sm;
     background-color: #fff;
+    box-shadow: 0 0 5px 0 $bg-light;
   }
 
   &__logo{
-    height: 60%;
+    height: 100%;
   }
 
   &__heading{

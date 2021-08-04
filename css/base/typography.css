@@ -38,7 +38,7 @@ a{
   color: $text-white;
 
   @mixin tabPort {
-    font-weight: 300;
+    /* font-weight: 300; */
   }
 
   &:hover{
