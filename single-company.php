@@ -23,7 +23,7 @@
 
   <div class="single-company__info-box">
     <p class="single-company__summary"><?php the_field('company_summary'); ?></p>
-    <a href="<?php the_field('company_link'); ?>" class="single-company__link" target="_blank"><?php the_title(); ?> website</a>
+    <a href="<?php the_field('company_website'); ?>" class="single-company__link" target="_blank"><?php the_title(); ?> website</a>
     <!-- work -->
     <input type="checkbox" name="productDisclaimer" id="productDisclaimer">
       <label for="productDisclaimer" class="single-product__disclaimer-label">What's an affiliate link?</label>

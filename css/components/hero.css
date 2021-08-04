@@ -1,15 +1,12 @@
 .hero{
   position: relative;
-
-  overflow: hidden;
   width: 100%;
-  height: 44rem;
+  margin-bottom: 6rem;
 
   @mixin desktop {
-    height: 62rem;
   }
   
-  
+  /*
   &__bg-desktop{
     position: fixed;
     top: 5rem;
@@ -24,16 +21,34 @@
     height: 62rem;
   }
   }
+  */
 
   &__banner-img{ 
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     display: block;
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 8rem;
-    
+
+    width: 150%;
+    margin: 113px auto 0;
+
+    @mixin desktop{
+      margin: 8rem auto 0;
+    }
+  }
+
+  &__text-box{
+    width: 80%;
+    margin: 6.5rem auto 0;
+    padding: 1rem;
+    background-color: rgba($bg-mid, .5);
+    box-shadow: $bs-sm-white inset;
+
     @mixin desktop {
-      margin-top: 4rem;
-      width: initial;
+      margin-top: 30rem;
+      padding: 4rem 1rem;
     }
   }
 
@@ -41,15 +56,14 @@
     position: relative;
     z-index: $z-hero-text;
     
-    margin-top: 2.4rem;
-    font-size: 2.6rem;
+    
+    font-size: 2.2rem;
     color: $text-white;
     text-align: center;
 
     background-color: transparent;
 
     @mixin desktop{
-      margin-top: 4rem;
       font-size: 4.4rem;
     }
   }
@@ -60,7 +74,7 @@
     
     margin-top: 2rem;
     padding: 0 1rem;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: $text-white;
     text-align: center;
 

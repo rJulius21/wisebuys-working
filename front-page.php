@@ -5,12 +5,14 @@
 
     <!-- START HERO -->
     <div class="hero">
-      <img src="<?php echo get_theme_file_uri('/img/hat-print-202-151-85.png'); ?>" alt="" class="hero__bg-desktop">
-      <img src="<?php echo get_theme_file_uri('/img/wisebuys-fullbanner-213213233.png'); ?>" alt="" class="hero__banner-img">
-      <p class="hero__sub-heading">Shop wisely friends</p>
-      <p class="hero__text">
-        We show you the best products, made right here in the USA, that are available on the most popular shopping platforms
-      </p>
+      <!-- <img src="<?php echo get_theme_file_uri('/img/hat-print-202-151-85.png'); ?>" alt="" class="hero__bg-desktop"> -->
+      <img src="<?php echo get_theme_file_uri('/img/wb_hero-desktop.png'); ?>" alt="" class="hero__banner-img">
+      <div class="hero__text-box">
+        <p class="hero__sub-heading">Shop wisely friends</p>
+        <p class="hero__text">
+          We show you the best products, made right here in the USA, that are available on the most popular shopping platforms
+        </p>
+      </div>
     </div>
     <!-- END HERO -->
 
