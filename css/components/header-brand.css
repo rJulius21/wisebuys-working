@@ -24,21 +24,27 @@
     width: 6rem;
     border-radius: $circle-sm;
     background-color: #fff;
-    box-shadow: 0 0 5px 0 $bg-light;
+    box-shadow: 0 0 10px 0 $accent-dark;
+    border: 1px solid $accent-dark;
   }
 
   &__logo{
-    height: 100%;
+    height: 101%;
   }
 
   &__heading{
     flex: 1;
     font-size: 3rem;
     text-indent: 2rem;
+    color: $accent-dark;
     
     @mixin tabPort{
       font-size: 3.4rem;
       text-indent: 2.6rem;
+    }
+
+    &:hover{
+      color: $accent-light;
     }
   }
 

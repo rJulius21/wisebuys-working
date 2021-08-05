@@ -12,8 +12,17 @@
 <div class="product-card__body">
 
   <div class="product-card__thumb-box">
-    <div class="product-card__thumb"><?php the_field('post_aff_img'); ?></div>
-  </div>
+
+    <!-- START WORDPRESS ACF IMAGE ARRAY QUERY -->
+    <?php 
+    $postCardImage = get_field('post_full_img');
+    if( !empty( $postCardImage ) ): ?>
+        <img class="product-card__thumb" src="<?php echo esc_url($postCardImage['url']); ?>" alt="<?php echo esc_attr($postCardImage['alt']); ?>" />
+    <?php endif; ?>
+    <!-- END WORDPRESS ACF IMAGE ARRAY QUERY -->
+  
+
+  </div>  
 
   <p class="product-card__price">$ <?php the_field('post_price'); ?></p>
   <a href="<?php the_permalink(); ?>" class="product-card__details-link U-center-flex">view details</a>

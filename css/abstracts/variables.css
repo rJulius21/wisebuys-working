@@ -25,14 +25,16 @@ $logo-lg: 1px;
 /* https://www.colorschemer.com/color-picker/ */
 $bg-dark: #141438;
 $bg-mid: #8b1c10;
+$bg-mid: #3d120e;
+$bg-mid: #bb291c;
 $bg-light: rgb(212, 212, 233);
 $bg-light: #b9c8ff;
 
 $bg-dark-translucent: rgba(20, 15, 41, .90);
 
-$accent-dark: rgb(202, 151, 85);
+
 $accent-dark: #d4b03d;
-$accent-light: rgb(230, 202, 114);
+$accent-light: rgb(250, 221, 126);
 
 /* UNIVERSAL COLORS */
 

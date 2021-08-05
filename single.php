@@ -12,7 +12,13 @@
 
   <div class="single-product__display">
     <div class="single-product__img-box">
-      <img src="<?php the_field('post_full_img'); ?>" alt="" class="single-product__img">
+      <!-- START WORDPRESS ACF IMAGE ARRAY QUERY -->
+      <?php 
+      $postSingleImage = get_field('post_full_img');
+      if( !empty( $postSingleImage ) ): ?>
+          <img class="single-product__img" src="<?php echo esc_url($postSingleImage['url']); ?>" alt="<?php echo esc_attr($postSingleImage['alt']); ?>" />
+      <?php endif; ?>
+      <!-- END WORDPRESS ACF IMAGE ARRAY QUERY -->
     </div>
   </div>
 

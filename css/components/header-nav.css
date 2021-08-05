@@ -45,7 +45,7 @@
     }
     @mixin tabLand{
       padding: 0.5rem .8rem;
-      color: $text-white;
+      color: $bg-light;
     }
     
     &:first-child{
