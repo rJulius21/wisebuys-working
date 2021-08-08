@@ -1,60 +1,59 @@
 .hero{
   position: relative;
+  display: none;
+
   width: 100%;
   margin-bottom: 6rem;
 
-  @mixin desktop {
-    
+  @mixin tabPort {
+    display: block;
   }
-  
-  /*
-  &__bg-desktop{
-    position: fixed;
-    top: 5rem;
-    left: 50%;
-    z-index: $z-hero-bg;
-    transform: translateX(-50%);
-    
-    background-color: $bg-dark;
-    height: 50rem;
 
-  @mixin desktop {
-    height: 62rem;
+  &__bg-tablet{
+    display: none;
+
+    @mixin tabPort{
+      display: block;
+      position: fixed;
+      z-index: $z-bg;
+
+      margin-top: 13.8rem;
+      width: 100%;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
-  }
-  */
 
   &__banner-img{ 
-    position: fixed;
-    z-index: -1;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    display: block;
+    display: none;
 
-    margin: 113px auto 0;
-
-    @mixin tabLand{
-      margin-top: 102px;
-    }
     @mixin desktop{
+      position: fixed;
+      z-index: -1;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+
+      margin: 113px auto 0;
       margin-top: 80px;  
     }
   }
 
   &__text-box{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     margin-top: 22rem;
     padding: 1rem;
-    background-color: rgba($bg-mid, .5);
-    box-shadow: $bs-sm-white inset, $bs-sm-white;
+    background-color: rgba($bg-dark, .5);
+    box-shadow: $bs-sm-white inset;
 
     @mixin tabLand {
       margin-top: 26rem;
     }
     @mixin desktop {
-      margin-top: 30rem;
+      margin-top: 36rem;
       padding: 4rem 1rem;
     }
   }
@@ -63,12 +62,11 @@
     position: relative;
     z-index: $z-hero-text;
     
-    
     font-size: 2.2rem;
-    color: $text-white;
+    font-weight: 400;
+    color: $bg-mid;
     text-align: center;
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
-
     background-color: transparent;
 
     @mixin desktop{
@@ -77,16 +75,18 @@
   }
 
   &__text{
-    position: relative;
-    z-index: $z-hero-text;
-    
-    margin-top: 2rem;
-    padding: 0 1rem;
-    font-size: 1.6rem;
-    color: $text-white;
-    text-align: center;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
-    background-color: transparent;
+    @mixin tabPort {
+      position: relative;
+      z-index: $z-hero-text;
+      
+      margin-top: 2rem;
+      padding: 0 5rem;
+      font-size: 1.6rem;
+      color: $accent-light;
+      text-align: center;
+      text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+      background-color: transparent;
+    }
 
     @mixin desktop{
       margin-top: 3rem;

@@ -26,6 +26,10 @@
 
     height: 45vh;
   }
+
+  &--open{
+    display: flex;
+  }
 }
 
 

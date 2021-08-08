@@ -1,0 +1,53 @@
+.hero-mobile{
+  position: relative;
+  z-index: $z-bg;
+  display: flex;
+
+  width: 100%;
+  height: 60vh;
+  background-color: $bg-light;
+
+  @mixin tabPort {
+    display: none;
+  }
+
+  &__bg{
+    position: fixed;
+    display: flex;
+    width: 100%;
+  
+    @mixin tabPort {
+      display: none;
+    }
+  }
+
+  &__text-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top: 68vw;
+    padding: 1rem;
+    background-color: rgba($bg-dark, .5);
+    text-align: center;
+    box-shadow: $bs-sm-white inset;
+  }
+
+  &__sub-heading {
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-weight: 400;
+    color: $bg-mid;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+  }
+
+  &__text {
+    color: $accent-light;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+    padding: 0 5rem;
+
+    
+  }
+}

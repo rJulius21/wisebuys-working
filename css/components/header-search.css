@@ -65,15 +65,16 @@
   }
 
   &__submit { 
-    background-color: $bg-light;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    border: $bor-enhance;
+    
+    border: none;
     cursor: pointer;
     padding: 5px;
     transition: $tr-all-fast;
+    background-color: $bg-mid;
+    color: $accent-light;
 
     @mixin tabPort{
       padding: 6px;

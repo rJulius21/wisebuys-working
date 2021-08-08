@@ -22,6 +22,7 @@
 @import "components/header-search";
 @import "components/header-user-nav";
 @import "components/hero";
+@import "components/hero-mobile";
 @import "components/menu-card";
 @import "components/product-card";
 @import "components/product-row"; 

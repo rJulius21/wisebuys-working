@@ -15,6 +15,7 @@ $z-link: 7;
 $z-body: 4;
 $z-hero-text: 1;
 $z-hero-bg: -1;
+$z-bg: -1;
 
 /* LOGO IMAGE SIZES USED AS BACKGROUND IMAGES */
 $logo-sm: 1px;
@@ -26,7 +27,7 @@ $logo-lg: 1px;
 $bg-dark: #141438;
 $bg-mid: #8b1c10;
 $bg-mid: #3d120e;
-$bg-mid: #bb291c;
+$bg-mid: #e93b3b;
 $bg-light: rgb(212, 212, 233);
 $bg-light: #b9c8ff;
 

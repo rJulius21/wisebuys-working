@@ -3,14 +3,26 @@
   <!-- START FRONT-PAGE -->
   <div class="front-page">
 
+    <!-- START MOBILE HERO -->
+      <div class="hero-mobile">
+        <img src="<?php echo get_theme_file_uri('/img/wb-bg-lightblue-embossed.png'); ?>" alt="" class="hero-mobile__bg">
+        <div class="hero-mobile__text-box">
+          <p class="hero-mobile__text">
+            Wisebuys USA is here to show you the best products, made right here in the USA, that are available on the most popular shopping platforms
+          </p>
+          <p class="hero-mobile__sub-heading">Shop wisely friends</p>
+      </div>
+      </div>
+    <!-- END MOBILE HERO -->
+
     <!-- START HERO -->
     <div class="hero">
-      <!-- <img src="<?php echo get_theme_file_uri('/img/hat-print-202-151-85.png'); ?>" alt="" class="hero__bg-desktop"> -->
-      <img src="<?php echo get_theme_file_uri('/img/wb_hero-desktop.png'); ?>" alt="" class="hero__banner-img">
+      <img src="<?php echo get_theme_file_uri('/img/wb-hero-tablet-embossed.png'); ?>" alt="" class="hero__bg-tablet">
+      <img src="<?php echo get_theme_file_uri('/img/wb_hero-whd.png'); ?>" alt="" class="hero__banner-img">
       <div class="hero__text-box">
         <p class="hero__sub-heading">Shop wisely friends</p>
         <p class="hero__text">
-          We show you the best products, made right here in the USA, that are available on the most popular shopping platforms
+        Wisebuys USA is here to show you the best products, made right here in the USA, that are available on the most popular shopping platforms
         </p>
       </div>
     </div>

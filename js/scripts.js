@@ -2,13 +2,13 @@
 
 import "../css/style.css"
 
-// Our modules / classes
-import HeaderMenus from "./modules/HeaderMenus"
+// Our modules & classes
+import Menus from "./modules/Menus"
 
 import ModuleTemplate from "./modules/ModuleTemplate"
 
 // Instantiate a new object using our modules / classes
-const headerMenus = new HeaderMenus()
+const menus = new Menus()
 
 const moduleTemplate = new ModuleTemplate()
 

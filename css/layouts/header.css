@@ -8,5 +8,4 @@
   /* background-image: linear-gradient(to bottom, $bg-dark, $bg-light); */
   background-color: $bg-dark;
   border-bottom: $bor-dar-lg;
-  box-shadow: 0 0 20px 0 $bg-light inset;
 }
