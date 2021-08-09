@@ -3,30 +3,21 @@
 <?php get_header(); ?>
 
 <!-- START CONTENT WRAPPER -->
-<div class="content-wrapper">
+<div class="page">
 
-  <!-- START HERO -->
-  <div class="construction">
 
-    <img src="<?php echo get_theme_file_uri('/img/hat-print-202-151-85.png'); ?>" alt="" class="construction__bg-img">
 
-    <!-- START DYNAMIC INPUT -->
+    <div class="cat-menu">
     <?php
-    while(have_posts()) {
-      the_post(); 
-    ?>
+              //This code tells wordpress to register a menu location here that is managed in the wordpress dashboard
+              wp_nav_menu(array(
+                'theme_location' => 'categoriesPageMenu',
+              ));
+            ?>
+    </div>
 
-      <p class="construction__heading"> <?php the_title(); ?> </p>
 
-      <p class="construction__message">
-        This page is coming soon, sorry for the inconvenience!
-      </p>
-
-    <?php } wp_reset_postdata(); ?>
-    <!-- END DYNAMIC INPUT -->
-
-  </div>
-  <!-- END HERO -->
+  
 
 </div>
 <!-- END CONTENT WRAPPER -->

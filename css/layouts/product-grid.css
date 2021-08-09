@@ -5,7 +5,7 @@
 
   width: 100%;
   padding: 1rem;
-  box-shadow: $bs-lg-white inset;
+  box-shadow: $bs-lg;
 
   @mixin tabPort{
     grid-template-columns: repeat(3, 1fr);

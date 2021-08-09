@@ -1,0 +1,27 @@
+.cat-menu{
+  margin: 0 auto;
+  width: 90%;
+  box-shadow: $bs-sm;
+}
+
+.menu-categories-page-container{
+  display: flex;
+}
+
+#menu-categories-page{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+
+  & > .menu-item{
+    padding: 1rem;
+    text-transform: capitalize;
+    background-color: $bg-dark;
+  }
+
+  & .menu-item{
+    background-color: $bg-dark;
+  }
+}
+

@@ -10,8 +10,8 @@ function site_files() {
     wp_enqueue_script('main-site-js', 'http://localhost:3000/bundled.js', NULL, '1.0', true);
   } else {
     wp_enqueue_script('our-vendors-js', get_theme_file_uri('/bundled-assets/undefined'), NULL, '1.0', true);
-    wp_enqueue_script('main-site-js', get_theme_file_uri('/bundled-assets/scripts.c1306efd383b7e454a41.js'), NULL, '1.0', true);
-    wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.c1306efd383b7e454a41.css'));
+    wp_enqueue_script('main-site-js', get_theme_file_uri('/bundled-assets/scripts.6251223e95454a8726a5.js'), NULL, '1.0', true);
+    wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.6251223e95454a8726a5.css'));
   }
 }
 // tells wordpress to call the function 'site_files' after the page is loaded
@@ -22,6 +22,7 @@ function site_features() {
   register_nav_menu('footerMenu', 'Footer Menu');
   register_nav_menu('otherHeaderMenu', 'Other Header Menu');
   register_nav_menu('categoriesHeaderMenu', 'Categories Header Menu');
+  register_nav_menu('categoriesPageMenu', 'Categories Page Menu');
 
   // Adds titles dynamically in browser tabs
   add_theme_support('title-tag');

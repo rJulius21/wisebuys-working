@@ -13,6 +13,7 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "components/cat-menu";
 @import "components/company-card";
 @import "components/company-link";
 @import "components/construction";

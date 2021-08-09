@@ -5,10 +5,11 @@
   overflow: hidden;
   width: 100%;
   border-radius: $br-sm;
+  box-shadow: $bs-sm;
   
   &__header{
     background-color: $bg-dark;
-    border: $bor-li-sm;
+  
   }
   
   &__header-link{
@@ -47,8 +48,8 @@
     
     background-color: $bg-light;
     padding: 1rem;
-    border: $bor-enhance;
     border-top: none;
+    
   }
   
   &__thumb-box{

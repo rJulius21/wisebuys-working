@@ -11,6 +11,7 @@
             Wisebuys USA is here to show you the best products, made right here in the USA, that are available on the most popular shopping platforms
           </p>
           <p class="hero-mobile__sub-heading">Shop wisely friends</p>
+          <a href="https://wisebuysusa.com/?s=" class="hero-mobile__all-items-link">See what we have!</a>
       </div>
       </div>
     <!-- END MOBILE HERO -->
@@ -24,6 +25,7 @@
         <p class="hero__text">
         Wisebuys USA is here to show you the best products, made right here in the USA, that are available on the most popular shopping platforms
         </p>
+        <a href="https://wisebuysusa.com/?s=" class="hero__all-items-link">See what we have!</a>
       </div>
     </div>
     <!-- END HERO -->
@@ -67,7 +69,7 @@
           </div>
 
           <div class="menu-card__item">
-            <a class="menu-card__item-link" href="<?php echo site_url('/company/lodge-cookware'); ?>">lodge cookware</a>
+            <a class="menu-card__item-link" href="<?php echo site_url('/company/lodge-cast-iron'); ?>">lodge cast iron</a>
           </div>
 
           <div class="menu-card__item">

@@ -42,10 +42,14 @@
   }
 
   &__text-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     width: 100%;
     margin: 0 auto;
     margin-top: 22rem;
-    padding: 1rem;
+    padding: 3rem 1rem;
     background-color: rgba($bg-dark, .5);
     box-shadow: $bs-sm-white inset;
 
@@ -54,7 +58,7 @@
     }
     @mixin desktop {
       margin-top: 36rem;
-      padding: 4rem 1rem;
+      padding: 6rem 1rem;
     }
   }
 
@@ -63,7 +67,7 @@
     z-index: $z-hero-text;
     
     font-size: 2.2rem;
-    font-weight: 400;
+    font-weight: 500;
     color: $bg-mid;
     text-align: center;
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
@@ -92,5 +96,13 @@
       margin-top: 3rem;
       font-size: 3rem;
     }
+  }
+
+  &__all-items-link{
+    position: relative;
+    margin-top: 2rem;
+    color: $accent-dark;
+    font-size: 2rem;
+    border-bottom: 2px solid $accent-dark;
   }
 }
