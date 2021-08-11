@@ -1,0 +1,19 @@
+.page-banner{
+  display: flex;
+  justify-content: center;
+
+  padding: 2rem 0;
+  background-color: $bg-mid;
+
+  &__heading{
+
+    background-image: linear-gradient(to bottom right, $bg-light, $accent-light);
+    background-clip: text;
+    color: transparent;
+    font-family:'Roboto', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 3.2rem;
+    text-shadow: $ts-lg;
+  }
+}

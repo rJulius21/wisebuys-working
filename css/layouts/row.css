@@ -22,8 +22,20 @@
     align-items: center;
     justify-content: center;
 
+    padding: 2rem;
+    background-color: $bg-dark;
+
     & *:not(:last-child){
       margin-right: 2rem;
+    }
+
+    & .current {
+      color: $accent-light;
+      text-decoration: underline;
+    }
+
+    & .dots {
+      color: #efefef;
     }
   }
 

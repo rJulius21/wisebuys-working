@@ -1,14 +1,13 @@
 .company-card{
-
   display: flex;
   flex-direction: column;
 
   overflow: hidden;
   width: 100%;
   border-radius: $br-sm;
+  box-shadow: $bs-sm;
   
   &__header{
-    
     background-color: $bg-dark;
   }
   
@@ -21,9 +20,6 @@
     font-size: 1.8rem;
     font-weight: 400;
     text-transform: capitalize;
-
-    @mixin tabPort{
-    }
 
     @mixin desktop{
       height: 4.5rem;

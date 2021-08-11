@@ -5,8 +5,10 @@
 <!-- START PAGE -->
 <div class="page">
   
-  <div class="row--paginate">
-    <?php the_archive_title(); ?>
+  <div class="page-banner">
+    <h2 class="page-banner__heading">
+      You're browsing in <?php the_archive_title(); ?>
+    </h2>
   </div>
 
   <div class="row--paginate">
@@ -22,7 +24,7 @@
 
         <?php get_template_part('template-parts/content', get_post_type()); ?>
 
-    <?php
+        <?php
       } wp_reset_postdata();
     ?>
   </div>
