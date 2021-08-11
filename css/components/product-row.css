@@ -2,6 +2,7 @@
 
   /* VIEWPORT IS THE FORMOST ELEMENT IN THIS COMPONENT */
   &__viewport{
+    position: relative;
     display: none;
     overflow: hidden;
     margin: 0 auto;
@@ -18,36 +19,89 @@
 
       width: 46rem;
     }
-
     @mixin tabLand{
       width: 68rem;
     }
-
     @mixin laptop{
       width: 90rem;
     }
-
     @mixin desktop{
       width: 112rem;
     }
   }
+  /* END VIEWPORT STYLES */
 
-/* BEGIN TYPICAL CASCADE HERE */
+/* BEGIN .product-row HERE */
 display: none;
 
-@mixin tabPort {
-  display: flex;
-}
-
-/* WIDTH OF .product-row MUST = 
-(.product-card:width*x) + (.product-card:margin-right*(x-1))  + (__viewport:padding-left + __viewport:padding-right) 
-WHERE X = TOTAL NUMBER OF .product-card in row*/
-width: 224rem;
-
-  & > .product-card{
-    width: 20rem;
-    margin-right: 2rem;
-    
+  @mixin tabPort {
+    display: flex;
+    width: max-content;
+    transition: all .3s;
   }
 
+  &__btn{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: $z-link;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: $tr-all-fast;
+
+    color: $bg-mid;
+    background-color: $bg-dark;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 1;
+    cursor: $pointer;
+    height: 6rem;
+    width: 6rem;
+    border-radius: $circle-sm;
+
+    &:hover {
+      background-color: $accent-light;
+    }
+
+    @mixin tabPort{
+      display: flex;
+    }
+
+    &--left{
+      left: .5rem;
+
+      &::after{
+        position: absolute;
+        content: " ";
+        clip-path: polygon(80% 0%, 80% 100%, 0 50%);
+
+        height: 50%;
+        width: 50%;
+        background-color: $bg-mid;
+      }
+    }
+    
+    &--right{
+      right: .5rem;
+
+      &::after{
+        position: absolute;
+        content: " ";
+        clip-path: polygon(20% 0%, 20% 100%, 100% 50%);
+
+        height: 50%;
+        width: 50%;
+        background-color: $bg-mid;
+      }
+    }
+  }  
+  
+}
+
+/* THIS BLOCK OVERWRITES STYLES IN components/product-card.css */
+.product-row > .product-card{
+  width: 20rem;
+  margin-right: 2rem;
 }

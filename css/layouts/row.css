@@ -11,7 +11,8 @@
   @mixin desktop{
     padding: 4rem 1rem;
   }
-  
+
+  /* MODIFIERS */ 
   &--col{
     flex-direction: column;
   }
@@ -26,6 +27,11 @@
     }
   }
 
+  &--relative{
+    position: relative;
+  }
+
+  /* BLOCK ELEMENTS */
   &__heading {
     width: 100%;
     display: flex;

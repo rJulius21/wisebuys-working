@@ -19,7 +19,7 @@
     <!-- START HERO -->
     <div class="hero">
       <img src="<?php echo get_theme_file_uri('/img/wb-hero-tablet-embossed.png'); ?>" alt="" class="hero__bg-tablet">
-      <img src="<?php echo get_theme_file_uri('/img/wb_hero-whd.png'); ?>" alt="" class="hero__banner-img">
+      <img src="<?php echo get_theme_file_uri('/img/wb-hero-whd.png'); ?>" alt="" class="hero__banner-img">
       <div class="hero__text-box">
         <p class="hero__sub-heading">Shop wisely friends</p>
         <p class="hero__text">
@@ -141,10 +141,10 @@
     <!-- END MENUS ROW -->
 
     <!-- START ROW -->
-    <div class="row">
+    <div id="frontPageSlider" class="row row--relative">
       
       <!-- START PRODUCT ROW -->
-      <!-- INCLUDE product-row.php WHEN CONSTRUCTION FINISHED -->
+      <?php include 'product-row.php'; ?>
       <!-- END PRODUCT ROW -->
 
     </div>

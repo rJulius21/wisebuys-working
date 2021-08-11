@@ -10,8 +10,8 @@ function site_files() {
     wp_enqueue_script('main-site-js', 'http://localhost:3000/bundled.js', NULL, '1.0', true);
   } else {
     wp_enqueue_script('our-vendors-js', get_theme_file_uri('/bundled-assets/undefined'), NULL, '1.0', true);
-    wp_enqueue_script('main-site-js', get_theme_file_uri('/bundled-assets/scripts.6251223e95454a8726a5.js'), NULL, '1.0', true);
-    wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.6251223e95454a8726a5.css'));
+    wp_enqueue_script('main-site-js', get_theme_file_uri('/bundled-assets/scripts.60301ae210d90ed12fe9.js'), NULL, '1.0', true);
+    wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.60301ae210d90ed12fe9.css'));
   }
 }
 // tells wordpress to call the function 'site_files' after the page is loaded

@@ -5,6 +5,10 @@ class Menus {
     this.events()
   }
 
+  //////////////////////////////////////////
+  //////////  CALL E LISTENERS  ////////////
+  //////////////////////////////////////////
+
   events() {
     this.headerNavToggles.forEach(this.openDropbox)
     this.headerNavToggles.forEach(this.closeDropbox)
