@@ -24,6 +24,7 @@
 
     padding: 2rem;
     background-color: $bg-dark;
+    border-top: 3px solid $bg-light;
 
     & *:not(:last-child){
       margin-right: 2rem;

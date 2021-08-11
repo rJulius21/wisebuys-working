@@ -72,6 +72,10 @@ display: none;
     &--left{
       left: .5rem;
 
+      @mixin desktop {
+        left: -5rem;
+      }
+
       &::after{
         position: absolute;
         content: " ";
@@ -85,6 +89,10 @@ display: none;
     
     &--right{
       right: .5rem;
+
+      @mixin desktop {
+        right: -5rem;
+      }
 
       &::after{
         position: absolute;

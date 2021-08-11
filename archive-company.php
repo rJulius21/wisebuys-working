@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+  <!-- START ARCHIVE -->
   <div class="archive">
 
     <div class="row--paginate">
@@ -34,6 +35,10 @@
       <?php  echo paginate_links(); ?>
     </div>
 
+
   </div>
+  <!-- END ARCHIVE -->
+
+
 
 <?php get_footer(); ?>

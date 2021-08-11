@@ -34,6 +34,16 @@
     <?php echo paginate_links();  ?>
   </div>
 
+  <!-- START ROW -->
+  <div id="frontPageSlider" class="row row--relative">
+      
+      <!-- START PRODUCT ROW -->
+      <?php include 'product-row.php'; ?>
+      <!-- END PRODUCT ROW -->
+
+    </div>
+    <!-- END ROW -->
+
 </div>
 <!-- END PAGE -->
 

@@ -38,4 +38,14 @@
   <?php } wp_reset_postdata(); ?>
 </div>
 
+<!-- START ROW -->
+<div id="frontPageSlider" class="row row--relative">
+      
+      <!-- START PRODUCT ROW -->
+      <?php include 'product-row.php'; ?>
+      <!-- END PRODUCT ROW -->
+
+    </div>
+    <!-- END ROW -->
+
 <?php get_footer(); ?>
