@@ -1,6 +1,6 @@
-class ProductSlider {
-  constructor() {
-    this.wrapper = document.querySelector('#frontPageSlider')
+class CardSlider {
+  constructor(slider) {
+    this.wrapper = document.querySelector(slider)
     this.lArr = this.wrapper.querySelector('.product-row__btn--left')
     this.rArr = this.wrapper.querySelector('.product-row__btn--right')
 
@@ -48,4 +48,4 @@ class ProductSlider {
   }
 }
 
-export default ProductSlider
+export default CardSlider
