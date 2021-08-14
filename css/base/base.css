@@ -14,16 +14,24 @@ html {
   }
 }
 
-.body{
+body{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 
-  background-image: radial-gradient($bg-light, $bg-light);
+ 
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+  background-image:url('../img/wb-pattern_mobile.png');
 
+  @mixin tabPort{
+    background-image: url('../img/wb-pattern_fhd.png');
+  }
+
+  @mixin desktop{
+    background-image: url('../img/wb-pattern_whd.png');
+  }
 }
 
 .box{

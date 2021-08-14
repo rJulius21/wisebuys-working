@@ -3,7 +3,7 @@
   flex-direction: column;
 
   border-radius: $br-md;
-  border: 1px solid white;
+  box-shadow: $bs-sm;
   
   @mixin laptop{
     width: 48%;
@@ -26,10 +26,10 @@
   
   &__header-link{
     padding: 1rem;
-    color: $bg-light;
+    color: $accent-dark;
     font-size: 2.4rem;
     text-transform: capitalize;
-    background-color: $bg-mid;
+    background-color: $bg-dark;
     text-shadow: $ts-lg;
 
     &:hover{
@@ -43,6 +43,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
 
+    background-color: rgba($bg-dark, 0.1);
     padding: 2rem;
     padding-bottom: 0;
   }
@@ -85,7 +86,7 @@
     text-align: center;
     text-transform: capitalize;
     width: 100%;
-    color: $bg-light;
+    color: $text-white;
 
     &:hover{
       color: $accent-light;

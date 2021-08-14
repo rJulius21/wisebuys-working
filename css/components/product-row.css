@@ -73,7 +73,7 @@ display: none;
       left: .5rem;
 
       @mixin desktop {
-        left: -5rem;
+        left: 2rem;
       }
 
       &::after{
@@ -91,7 +91,7 @@ display: none;
       right: .5rem;
 
       @mixin desktop {
-        right: -5rem;
+        right: 2rem;
       }
 
       &::after{

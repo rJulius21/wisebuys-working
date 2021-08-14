@@ -3,9 +3,31 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 
   @mixin desktop{
     margin: 0 auto;
     width: $desktop;
+  }
+
+  &__banner{
+    display: none;
+    @mixin tabPort {
+      display: block;
+      margin-top: 6rem;
+      width: 120%;
+    }
+    @mixin desktop {
+      display: none;
+    }
+  }
+
+  &__banner-whd{
+    display: none;
+    @mixin desktop {
+      display: block;
+      margin-top: 6rem;
+      width: 110%;
+    }
   }
 }

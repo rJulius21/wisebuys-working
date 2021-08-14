@@ -1,19 +1,32 @@
 .page-banner{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 
   padding: 2rem 0;
   background-color: $bg-mid;
 
   &__heading{
+    display: flex;
+    flex-wrap: wrap;
 
-    background-image: linear-gradient(to bottom right, $bg-light, $accent-light);
+    background-image: linear-gradient(to bottom right, rgb(60, 60, 179), $bg-dark);
     background-clip: text;
     color: transparent;
     font-family:'Roboto', sans-serif;
     font-weight: 700;
     font-style: italic;
-    font-size: 3.2rem;
+    font-size: 2.6rem;
     text-shadow: $ts-lg;
+    text-transform: capitalize;
+
+    @mixin tabLand{
+      font-size: 3.2rem;
+    }
+
+    & span::before{
+      content: " ";
+      white-space: pre;
+    }
   }
 }

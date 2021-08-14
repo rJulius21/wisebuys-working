@@ -51,3 +51,7 @@
     text-align: center;
   }
 }
+
+/* UNIQUE ROW INSTANCES */
+
+#frontPageSlider{ margin: 10rem auto; }

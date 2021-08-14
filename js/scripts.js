@@ -4,7 +4,7 @@ import "../css/style.css"
 
 // Our modules & classes
 import Menus from "./modules/Menus"
-import CardSlider from "./modules/ProductSlider"
+import CardSlider from "./modules/CardSlider"
 
 import ModuleTemplate from "./modules/ModuleTemplate"
 

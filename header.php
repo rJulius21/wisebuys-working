@@ -18,7 +18,7 @@
           <img src="<?php echo get_theme_file_uri('img/wb_logo-gold-blue.png')?>" alt="" class="header-brand__logo">
         </div>
 
-        <a href="<?php echo site_url(); ?>" class="header-brand__heading-link"><h1 class="header-brand__heading">WisebuysUSA.com</h1></a>
+        <a href="<?php echo site_url(); ?>" class="header-brand__heading-link"><h1 class="header-brand__heading">WiseBuysUSA.com</h1></a>
       </div>
       <!-- START HEADER BRANDING -->
 
