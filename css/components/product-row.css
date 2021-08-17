@@ -109,7 +109,7 @@ display: none;
 }
 
 /* THIS BLOCK OVERWRITES STYLES IN components/product-card.css */
-.product-row > .product-card{
+.product-row > .product-card, .product-row > .company-card{
   width: 20rem;
   margin-right: 2rem;
 }

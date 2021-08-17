@@ -38,5 +38,14 @@
 
 </div>
 <!-- END PAGE -->
+<!-- START ROW -->
+<div id="frontPageSlider" class="row row--relative">
+      
+      <!-- START PRODUCT ROW -->
+      <?php include 'sliders/product-row.php'; ?>
+      <!-- END PRODUCT ROW -->
+
+    </div>
+    <!-- END ROW -->
 
 <?php get_footer(); ?>

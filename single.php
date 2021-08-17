@@ -47,13 +47,11 @@
   <div id="frontPageSlider" class="row row--relative">
       
       <!-- START PRODUCT ROW -->
-      <?php include 'product-row.php'; ?>
+      <?php include 'sliders/product-row.php'; ?>
       <!-- END PRODUCT ROW -->
 
     </div>
     <!-- END ROW -->
-
-
 
 </div>
 

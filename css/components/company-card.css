@@ -48,6 +48,7 @@
     box-shadow: $bs-sm;
     border-radius: $br-sm;
     background-color: #fff;
+    padding: 5px;
   }
   
   &__thumb{

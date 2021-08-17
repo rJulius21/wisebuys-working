@@ -26,8 +26,9 @@
 @import "components/hero-mobile";
 @import "components/menu-card";
 @import "components/page-banner";
+@import "components/problem";
 @import "components/product-card";
-@import "components/product-row"; 
+@import "components/product-row";
 @import "components/single-company"; 
 @import "components/single-product";
 
