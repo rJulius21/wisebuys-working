@@ -38,22 +38,20 @@
     display: flex;
     
     padding: 1rem;
+    background-color: $bg-light;
     
     @mixin tabLand {
       align-items: center;
 
       width: 55%;
-      background-color: $bg-light;
-      background-color: #fff;
     }
   }
   
   &__heading{
     text-transform: capitalize;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 400;
     padding: 1rem;
-    background-color: $bg-dark;
     color: $white;
   }
   
@@ -85,7 +83,8 @@
     display: flex;
     flex-direction: column;
 
-    background-color: $bg-mid;
+    padding: 1rem;
+    background-color: $bg-dark;
     
     @mixin tabLand {
       width: 45%;
@@ -105,7 +104,6 @@
     flex-wrap: wrap;
 
     width: 100%;
-    background-color: $accent-light;
   }
 
   &__buy-link{
@@ -119,7 +117,9 @@
     font-size: 2rem;
     color: $text-black;
     transition: transform .2s;
-    background-color: $accent-dark;
+    background-color: $accent;
+    border-radius: $br-lg;
+    margin: 1rem 0rem;
 
     @mixin tabPort {
       width: 50%;
@@ -145,8 +145,7 @@
     justify-content: center;
     flex-direction: column;
 
-    //background-color: $bg-light;
-    padding: 1rem;
+    background-color: $bg-highlight;
 
     @mixin tabPort{
       flex-direction: row;
@@ -165,11 +164,9 @@
     justify-content: center;
     
     width: 100%;
-    color: $text-highlight;
     font-size: 2.8rem;
     font-weight: 400;
     letter-spacing: 1px;
-    background-color: $bg-highlight;
 
     @mixin tabPort {
       width: 50%;
@@ -189,7 +186,6 @@
 
     font-size: 1.2rem;
     text-align: center;
-    background-color: $text-highlight;
 
     @mixin tabPort {
       width: 50%;
@@ -211,10 +207,10 @@
     text-decoration: underline;
     background-color: $bg-dark;
     padding: 4px 8px;
-    border-radius: $br-md;
+    border-radius: $br-lg;
     transition: $tr-all-fast;
     cursor: $pointer;
-    margin: 2rem auto;
+    margin: 1rem auto;
     box-shadow: $bs-sm;
     user-select: none;
 
@@ -232,14 +228,14 @@
 
     background-color: $accent-light;
     padding: 1rem;
-    width: 90%;
+    width: 100%;
     margin-bottom: 2rem;
     box-shadow: $bs-sm;
     border-radius: $br-md;
     font-size: 1.4rem;
 
     @mixin tabPort {
-      margin-top: 3rem; 
+      margin-top: 1rem; 
     }
     @mixin tabLand {
       margin-top: 0rem; 

@@ -4,7 +4,6 @@
   
   width: 100%;
   
-  
   @mixin tabLand{
     flex-direction: row;
 
@@ -53,7 +52,6 @@
     text-transform: capitalize;
     font-size: 2.6rem;
     font-weight: 400;
-    padding: 1rem 0;
     background-color: $bg-dark;
     color: $white;
   }
@@ -77,8 +75,9 @@
     display: flex;
     flex-direction: column;
     
+    padding: 1rem;
     width: 100%;
-    background-color: $bg-mid;
+    background-color: $bg-dark;
 
     @mixin tabLand {
       width: 55%;
@@ -87,18 +86,19 @@
   
   &__summary{
     flex: 1;
+
     text-align: justify;
-    
-    padding: 2rem;
     color: $text-white;
+    margin-top: 3rem;
+    text-indent: 2rem;
   }
   
   &__link{
     align-self: center;
     display: flex;
 
-    margin: 2.4rem auto;
-    padding: 1rem;
+    margin: 1rem auto;
+    padding: .5rem 1rem;
     box-shadow: $bs-sm-white;
     border-radius: $br-md;
     border: $bor-enhance;
@@ -117,10 +117,11 @@
   }
 
   &__location{
-    
-    padding: 2rem;
+    margin-top: 1rem;
     background-color: $bg-dark;
     color: $text-white; 
+    text-align: center;
+    font-size: 1.4rem;
 
     & span{
       text-transform: capitalize;

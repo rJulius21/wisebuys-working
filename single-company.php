@@ -23,6 +23,7 @@
 
   <div class="single-company__info-box">
     <p class="single-company__summary"><?php the_field('company_summary'); ?></p>
+    <a href="https://wisebuysusa.com/?s=<?php the_title(); ?>" class="single-company__link U-center-flex">view items</a>
     <a href="<?php the_field('company_website'); ?>" class="single-company__link" target="_blank"><?php the_title(); ?> website</a>
     <!-- work -->
     <input type="checkbox" name="productDisclaimer" id="productDisclaimer">

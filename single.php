@@ -24,7 +24,6 @@
 
   <div class="single-product__info-box">
     <h2 class="single-product__heading"><?php the_title(); ?></h2>
-    <p class="single-product__description"><?php the_field('post_desc'); ?></p>
     <div class="single-product__price-box">
       <p class="single-product__price">$<?php the_field('post_price'); ?></p>
       <p class="single-product__price-disclaimer">Prices are subject to change on retailing websites</p>
@@ -39,6 +38,7 @@
         We use affiliate links on WisebuysUSA.com to earn a small commison on the quality American products that we show you on the site. Without these links, this site would not be able to operate, thanks for visiting!
       </p>
     </div>
+    <p class="single-product__description"><?php the_field('post_desc'); ?></p>
   </div>
 
   <?php } wp_reset_postdata(); ?>
