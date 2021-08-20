@@ -33,8 +33,7 @@
     width: 100%;
     margin: 0 auto;
     padding: 3rem 1rem;
-    background-color: rgba($bg-dark, 0.15);
-    box-shadow: $bs-sm-white inset;
+    background-color: rgba($bg-light, 0.05);
 
     @mixin desktop {
       padding: 6rem 1rem;

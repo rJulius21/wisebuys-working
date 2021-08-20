@@ -1,5 +1,3 @@
-
-
 <?php get_header(); ?>
 
 <!-- START PAGE -->
@@ -8,7 +6,7 @@
 
 
 
-    <H2>page template</H2>
+    <H2>thank you!</H2>
 
 </div>
 <!-- END PAGE -->

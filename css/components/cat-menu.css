@@ -1,7 +1,7 @@
 .cat-menu{
-  margin: 0 auto;
+  margin: 6rem auto 0;
   width: 90%;
-  box-shadow: $bs-sm;
+  box-shadow: $bs-lg;
 }
 
 .menu-categories-page-container{
@@ -9,10 +9,11 @@
 }
 
 #menu-categories-page{
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
+
+  width: 100%;
 
   & > .menu-item{
     padding: 1rem;

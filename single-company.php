@@ -17,7 +17,7 @@
     <div class="single-company__img-box">
       <img src="<?php the_field('company_img'); ?>" alt="" class="single-company__img">
     </div>
-    <p class="single-company__location"><span><?php the_title(); ?> </span> was founded in <?php the_field('company_location'); ?> <?php the_field('company_est'); ?></p>
+    <p class="single-company__location"><span><?php the_title(); ?> </span> was founded in <?php the_field('company_location'); ?> in <?php the_field('company_est'); ?></p>
   </div>
 
 
