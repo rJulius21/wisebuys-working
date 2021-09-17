@@ -23,15 +23,8 @@ body{
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  background-image:url('../img/wb-pattern_mobile.png');
-
-  @mixin tabPort{
-    background-image: url('../img/wb-pattern_fhd.png');
-  }
-
-  @mixin desktop{
-    background-image: url('../img/wb-pattern_whd.png');
-  }
+  background-image: linear-gradient(to bottom right, rgb(221, 224, 255), $bg-light);
+  
 }
 
 .box{

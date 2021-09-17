@@ -1,0 +1,27 @@
+.thank-you{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 10rem auto;
+  border-radius: $br-lg;
+  width: 100%;
+  padding: 2rem;
+  background-color: $bg-dark;
+
+  @mixin tabLand{
+    width: 70rem;
+  }
+
+  &__heading{
+    color: $text-white;
+  }
+  
+  &__text{
+    color: $text-white;
+
+    & a{
+      text-decoration: underline;
+    }
+  }
+}

@@ -20,7 +20,6 @@
 
     <!-- START HERO -->
     <div class="hero">
-      <div class="hero__blur-img"></div>
       <div class="hero__text-box">
         <p class="hero__sub-heading">Shop wisely friends</p>
         <p class="hero__text">
@@ -113,7 +112,7 @@
             <a class="menu-card__item-link" href="<?php echo site_url('/category/tools'); ?>">tools</a>
           </div>
           <div class="menu-card__item">
-            <a class="menu-card__item-link" href="<?php echo site_url('/category/home/home-essentials'); ?>">home essentials</a>
+            <a class="menu-card__item-link" href="<?php echo site_url('/category/home/decor'); ?>">home decor</a>
           </div>
           <div class="menu-card__item">
             <a class="menu-card__item-link" href="<?php echo site_url('/category/recreation/outdoors'); ?>">outdoors</a>
@@ -125,13 +124,13 @@
             <a class="menu-card__item-link" href="<?php echo site_url('/category/home/kitchen/cookware'); ?>">cookware</a>
           </div>
           <div class="menu-card__item">
-            <a class="menu-card__item-link" href="<?php echo site_url('/category/home/kids-clothing'); ?>">kid's clothing</a>
+            <a class="menu-card__item-link" href="<?php echo site_url('/category/footwear/boots'); ?>">boots</a>
           </div>
           <div class="menu-card__item">
-            <a class="menu-card__item-link" href="<?php echo site_url('/category/tools/womens-clothing'); ?>">women's clothing</a>
+            <a class="menu-card__item-link" href="<?php echo site_url('/category/accessories/wallets'); ?>">wallets</a>
           </div>
           <div class="menu-card__item">
-            <a class="menu-card__item-link" href="<?php echo site_url('/category/mens-clothing'); ?>">men's clothing</a>
+            <a class="menu-card__item-link" href="<?php echo site_url('/category/electronics'); ?>">electronics</a>
           </div>
           
         </div>
@@ -143,13 +142,17 @@
 
     <!-- START ROW -->
     <div id="frontPageSlider" class="row row--relative">
-      
       <!-- START PRODUCT ROW -->
       <?php include 'sliders/product-row.php'; ?>
       <!-- END PRODUCT ROW -->
-
     </div>
     <!-- END ROW -->
+
+    <!-- START COMPANY ROW -->
+    <div class="row row--relative" id="companySlider">
+      <?php include 'sliders/company-row.php';?>
+    </div>
+    <!-- END COMPANY ROW -->
 
   </div>
   <!-- END FRONT-PAGE -->

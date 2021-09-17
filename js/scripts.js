@@ -11,6 +11,7 @@ import ModuleTemplate from "./modules/ModuleTemplate"
 // Instantiate a new object using our modules / classes
 const menus = new Menus()
 const cardSliderFrontPage = new CardSlider('#frontPageSlider')
+const cardSliderCompany = new CardSlider('#companySlider')
 
 const moduleTemplate = new ModuleTemplate()
 

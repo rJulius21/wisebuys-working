@@ -1,27 +1,12 @@
 .hero{
   position: relative;
   display: none;
-  overflow: hidden;
 
   width: 100%;
   margin: 6rem auto 16rem;
 
   @mixin tabPort {
     display: block;
-  }
-
-  &__blur-img{
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    height: 1080px;
-    width: 2560px;
-    background-image: url('../img/wb-pattern_whd.png');
-    background-attachment: fixed;
-    background-size: 2560px 1260px;
-    background-position:center;
-    filter: blur(3px); 
   }
 
   &__text-box{
@@ -33,7 +18,8 @@
     width: 100%;
     margin: 0 auto;
     padding: 3rem 1rem;
-    background-color: rgba($bg-light, 0.05);
+    background-color: $bg-light;
+    box-shadow: $bs-sm;
 
     @mixin desktop {
       padding: 6rem 1rem;
