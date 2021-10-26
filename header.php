@@ -11,6 +11,7 @@
       
       <!-- START HEADER -->
       <header class="header">
+        <a href="<?php echo site_url('/newhome'); ?>" class="fp2-link">new front page</a>
 
       <!-- START HEADER BRANDING -->
       <div class="header-brand">

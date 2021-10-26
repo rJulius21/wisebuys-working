@@ -1,0 +1,175 @@
+.fp-brands{
+  padding: 2px;
+  @mixin tabPort{
+    padding: 2rem;
+  }
+  @mixin desktop{
+    padding: 10rem 8rem;
+  }
+
+  &__grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 2rem;
+    justify-items: center;
+    
+    @mixin tabPort{
+      grid-row-gap: 4rem;
+    }
+    @mixin desktop{
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+
+  &__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20rem;
+    height: 31rem;
+
+    transform: scale(.85);
+
+    @mixin tabPort{
+      transform: scale(1);
+    }
+
+    @mixin desktop{
+      width: 24rem;
+      height: 31rem;
+    }
+
+    &:hover .fp-brands__img-cap{
+      transform: translateX(0) rotate(0);
+    }
+
+    &:hover .fp-brands__label-cta::before{
+      background-color: $accent;
+      transform: rotate(180deg);
+    }
+
+    &:hover .fp-brands__label-box{
+      transform: translateX(-20rem);
+    }
+  }
+
+  &__img-box{
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1rem;
+    background-color: white;
+    height: 24rem;
+    width: 100%;
+  }
+
+  &__img{
+    width: 100%;
+    height: auto;
+  }
+
+  &__img-cap{
+    position: absolute;
+    top: 0;
+    right: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 50%);
+    transform: translateX(100%) rotate(90deg);
+
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 20, 56, 0.75);
+    transition: transform .3s;
+    
+    &::before{
+      content: "See more from"; 
+      font-size: 1.8rem;
+    }
+    
+    & span{
+      text-transform: capitalize;
+      font-size: 2.6rem;
+      font-style: italic;
+      font-weight: 500;
+    }
+  }
+
+  &__label-viewport{
+    /*
+    */
+    overflow: hidden;
+    display: block;
+    width: 20rem;
+    height: 5rem;
+
+    @mixin desktop{
+      width: 24rem;
+    }
+  }
+
+  &__label-box{ 
+    display: flex;
+    align-items: stretch;
+
+    width: 40rem;
+    height: 5rem;
+    transition: transform .3s;
+    @mixin desktop{
+      width: 44rem;
+    }
+  }
+  
+  &__label-brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 16rem;
+    background-color: rgb(255, 255, 255);
+    color: $bg-dark;
+    font-family: 'Andada Pro', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    text-transform: capitalize;
+
+    @mixin desktop{
+      width: 20rem;
+    }
+  }
+
+  &__label-cta{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    padding-right: 3.2rem;
+    background-color: $bg-dark;
+    width: 24rem;
+    line-height: 1;
+
+    @mixin desktop{
+      width: 24rem;
+    }
+
+    &::before{
+      content:"";
+      position: absolute;
+      top: 1.3rem;
+      left: .8rem;
+      clip-path: polygon( 0 50%, 100% 0, 100% 100%);
+
+      height: 2.4rem;
+      width: 2rem;
+      background-color: #fff;
+      transition: all .3s;
+    }
+
+    & p{
+      color: $accent;
+    }
+  }
+}

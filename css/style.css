@@ -17,6 +17,11 @@
 @import "components/company-card";
 @import "components/company-link";
 @import "components/construction";
+@import "components/fp-brands";
+@import "components/fp-categories";
+@import "components/fp-featured";
+@import "components/fp-hero";
+@import "components/fp-platforms";
 @import "components/header-brand";
 @import "components/header-drop-box";
 @import "components/header-nav";
@@ -35,6 +40,7 @@
 
 @import "layouts/archive";
 @import "layouts/footer"; 
+@import "layouts/fp-section"; 
 @import "layouts/front-page"; 
 @import "layouts/product-grid"; 
 @import "layouts/header"; 

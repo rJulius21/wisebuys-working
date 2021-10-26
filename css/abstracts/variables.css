@@ -28,8 +28,8 @@ $bg-dark: #141438;
 $bg-mid: #8b1c10;
 $bg-mid: #3d120e;
 $bg-mid: #e93b3b;
-$bg-light: rgb(212, 212, 233);
 $bg-light: #b9c8ff;
+$bg-light: rgb(212, 217, 233);
 
 $bg-dark-translucent: rgba(20, 15, 41, .90);
 
@@ -42,7 +42,7 @@ $accent: rgb(250, 221, 126);
 /* UNIVERSAL COLORS */
 
 $bg-highlight:rgb(125, 243, 125);
-$text-highlight: rgb(50, 185, 50);
+$text-highlight: rgb(28, 114, 28);
 
 $black: #101010;
 $white: #eaeaea;

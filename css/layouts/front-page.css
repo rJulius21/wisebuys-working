@@ -1,13 +1,15 @@
-.front-page{
+.front-page{ 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
+  /*
   @mixin desktop{
     margin: 0 auto;
     width: $desktop;
   }
+  */
 
   &__banner{
     display: none;

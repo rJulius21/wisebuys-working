@@ -73,6 +73,7 @@
   
   &__info-box{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     
     padding: 1rem;
@@ -95,12 +96,12 @@
   
   &__link{
     align-self: center;
-    display: flex;
-
-    margin: 1rem auto;
+    display: block;
+    
+    margin-top: 1rem;
+    width: 100%;
     padding: .5rem 1rem;
-    box-shadow: $bs-sm-white;
-    border-radius: $br-md;
+    border-radius: $br-sm;
     border: $bor-enhance;
     background-color: $accent-dark;
     text-align: center;
@@ -109,9 +110,13 @@
     color: $text-black;
     transition: $tr-all-fast;
 
+    @mixin tabLand {
+    }
+    
     &:hover{
-      transform: translateY(-1rem);
-      box-shadow: $bs-lg-white;
+      color: $text-black;
+      box-shadow: $bs-sm-white;
+      transform: translateY(-.5rem);
       background-color: $accent-dark;
     }
   }
@@ -127,5 +132,4 @@
       text-transform: capitalize;
     }
   }
-
 }

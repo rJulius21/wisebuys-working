@@ -34,7 +34,7 @@
     font-weight: 700;
     color: $bg-dark;
     text-align: center;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+    
 
     @mixin desktop{
       font-size: 4.4rem;
@@ -49,9 +49,9 @@
       margin-top: 2rem;
       padding: 0 5rem;
       font-size: 1.6rem;
-      color: $accent-light;
+      color: $bg-dark;
       text-align: center;
-      text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+      
     }
 
     @mixin desktop{

@@ -8,6 +8,7 @@
 
 html {
   font-size: 50%; /* 1rem = 8px */
+  scroll-behavior: smooth;
   
   @mixin tabPort{
     font-size: 62.5%; /* 1rem = 10px */

@@ -2,7 +2,7 @@
 
 function site_files() {
   // these lines add 3rd party css files to the theme
-  wp_enqueue_style('custom-google-fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i');
+  wp_enqueue_style('custom-google-fonts', '//fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@1,500&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@300;400&family=Roboto:wght@100;300;400;500');
   wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
   
   // these lines add our custom css and js files to the theme
@@ -10,8 +10,8 @@ function site_files() {
     wp_enqueue_script('main-site-js', 'http://localhost:3000/bundled.js', NULL, '1.0', true);
   } else {
     wp_enqueue_script('our-vendors-js', get_theme_file_uri('/bundled-assets/undefined'), NULL, '1.0', true);
-    wp_enqueue_script('main-site-js', get_theme_file_uri('/bundled-assets/scripts.16f39dc08b3819761b41.js'), NULL, '1.0', true);
-    wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.16f39dc08b3819761b41.css'));
+    wp_enqueue_script('main-site-js', get_theme_file_uri('/bundled-assets/scripts.7a5e0e1b1b558ad82483.js'), NULL, '1.0', true);
+    wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.7a5e0e1b1b558ad82483.css'));
   }
 }
 // tells wordpress to call the function 'site_files' after the page is loaded
