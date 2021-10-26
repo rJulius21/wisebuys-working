@@ -1,21 +1,22 @@
 .fp-categories{
-  padding: 2rem;
-  @mixin desktop{
-    padding: 10rem 16rem;
+  padding: 3rem 0;
+  @mixin fullDesktop{
+    padding: 10rem 4%;
   }
 
   &__grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 6rem;
+    grid-row-gap: 4rem;
     justify-items: center;
 
-    @mixin desktop{
+    @mixin laptop{
       grid-template-columns: repeat(4, 1fr);
+      grid-row-gap: 6rem;
     }
   }
 
-  &__item{
+  &__item{ 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,8 +25,15 @@
     width: 18rem;
     height: 26rem;
 
+    @mixin laptop{
+      width: 20vw;
+      height: 30rem;
+    }
     @mixin desktop{
-      width: 30rem;
+      width: 26rem;
+      height: 34rem;
+    }
+    @mixin fullDesktop{
       height: 38rem;
     }
 
@@ -60,10 +68,18 @@
     border-radius: 30rem;
     cursor: pointer;
 
+    @mixin laptop{
+      width: 20vw;
+      height: 20vw;
+    }
     @mixin desktop{
+      width: 26rem;
+      height: 26rem;
+      border: 2rem solid $bg-dark;
+    }
+    @mixin fullDesktop{
       width: 30rem;
       height: 30rem;
-      border: 2rem solid $bg-dark;
     }
   }
 
@@ -81,20 +97,39 @@
     */
     transform: translate(-50%, -32rem);
 
-    width: 31rem;
-    height: 31rem;
+    width: 21rem;
+    height: 21rem;
     border-radius: 31rem;
     background-image: linear-gradient(to bottom, $accent, rgba(0, 0, 0, 0));
     transition: transform .3s;
 
+    @mixin laptop{
+      width: 21vw;
+      height: 21vw;
+    }
+    @mixin desktop{
+      width: 27rem;
+      height: 27rem;
+    }
+    @mixin fullDesktop{
+      width: 31rem;
+      height: 31rem;
+    }
+
     &::after{
       position: absolute;
-      bottom: 25%;
+      bottom: 20%;
       left: 50%;
       transform: translate(-50%);
-      content: "let's take a look!";
+      content: "";
       color: $bg-dark;
+
+      @mixin tabLand{
+        bottom: 25%;
+        content: "";
+      }
     }
+
   }
 
   &__label-viewport{
@@ -108,7 +143,7 @@
     border-radius: 6rem;
 
     @mixin desktop{
-      width: 28rem;
+      width: 24rem;
       height: 6rem;
     }
   }
@@ -124,7 +159,7 @@
     background-color: $bg-dark;
 
     @mixin desktop{
-      width: 28rem;
+      width: 24rem;
       height: 12rem;
     }
   }
@@ -142,7 +177,7 @@
     font-size: 2rem;
 
     @mixin desktop{
-      width: 28rem;
+      width: 24rem;
       height: 6rem;
     }
   }
@@ -162,7 +197,7 @@
     color: $bg-dark;
 
     @mixin desktop{
-      width: 28rem;
+      width: 24rem;
       height: 6rem;
       border: 1rem solid $bg-dark;
     }

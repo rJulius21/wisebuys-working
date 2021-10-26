@@ -1,37 +1,74 @@
 .fp-featured{
   display: flex;
+  /*
+  display: none;
+  */
   justify-content: center;
 
   &__grid{
     /*
-    background-color: orange;
     */
     display: flex;
     flex-direction: column;
 
-    width: 140rem;
-    padding-top: 10rem;
-    padding-bottom: 28rem;
-    padding-left: 1.5rem;
-
+    width: 90%;
+    padding-top: 24rem;
+    padding-bottom: 2rem;
+    
+    @mixin tabPort {
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
     @mixin laptop {
+      padding-top: 24rem;
+      padding-bottom: 6rem;
+      padding-left: 15rem;
+      padding-right: 15rem;
+    }
+    @mixin desktop {
       flex-direction: row;
+      width: 140rem;
+      padding-top: 30rem;
+      padding-bottom: 28rem;
+      padding-left: 2rem;
+    }
+    @mixin fullDesktop { 
+      width: 140rem; 
+      padding-left: 4.5rem;
     }
   }
 
   &__item{
-    overflow: hidden;
     position: relative;
     /*
     */
+    overflow: hidden;
+    margin-top: -18rem;
     border: 1px solid $bg-dark;
     box-shadow: 0 0 3rem rgba(0, 0, 0, 0.4);
     background-color: #fff;
-
-    height: 37rem;
-    width: 37rem;
-    margin-right: -12rem;
+    height: 60vw;
+    width: 60vw;
     transition: all .3s;
+    
+    @mixin tabPort {
+      margin-top: -20rem;
+      height: 37rem;
+      width: 37rem;
+    }
+
+    @mixin laptop {
+      height: 35rem;
+      width: 35rem;
+    }
+    @mixin desktop {
+      margin-right: -15rem; 
+    }
+    @mixin fullDesktop {
+      height: 37rem;
+      width: 37rem;
+      margin-right: -14rem; 
+    }
 
     &:hover, &:active{
       z-index: 3;
@@ -52,9 +89,9 @@
   }
 
   &__item:nth-child(even){
-    
-    @mixin laptop{
-      
+    align-self: flex-end;
+  
+    @mixin desktop{
       top: 16rem;
     }
   }
@@ -74,28 +111,43 @@
   &__img{
     display: flex;
     margin-top: 8rem;
+    width: 100%;
+
+    @mixin tabPort{
+      width: auto;
+    }
   }
 
   &__label-box{
     position: absolute;
     top: 0;
     left: 0;
+    transform: translateY(-6rem);
     clip-path: polygon( 0 10%, 100% 0, 100% 90%,0 100%);
-    transform: translateY(-42rem);
-
+    
     width: 101%;
-    height: 150%;
+    height: 50%;
     background-color: $bg-dark;
     transition: all .3s;
+    
+    @mixin tabPort {
+      transform: translateY(-42rem);
+      height: 150%;
+      
+    }
 
     & span{
       &::before{
-        content: "Browse all of our ";
+        content: "";
         display: block;
         padding-top: 9rem;
         padding-left: 2rem;
         font-size: 2.5rem;
         color: white;
+        
+        @mixin tabPort {
+          content: "Browse all of our ";
+        }
       }
     }
   }
@@ -104,11 +156,14 @@
     /*
     background-color: red;
     */
-    padding-top: 33rem;
     padding-left: 3rem;
-
+    
     font-size: 2.6rem;
     text-transform: capitalize;
     transition: all .3s;
+    
+    @mixin tabPort {
+      padding-top: 33rem;
+    }
   }
 }

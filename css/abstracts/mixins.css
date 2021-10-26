@@ -25,6 +25,12 @@
   }
 }
 
+@define-mixin fullDesktop {
+  @media (min-width: 1400px) {
+    @mixin-content;
+  }
+}
+
 
 /*
 @mixin bg-img-center{
