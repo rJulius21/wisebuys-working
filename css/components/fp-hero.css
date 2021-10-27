@@ -236,8 +236,13 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    justify-content: center;
     
     width: 100%;
+
+    @mixin tabPort {
+      justify-content: space-around;
+    }
   }
 
   &__nav-item{
