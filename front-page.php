@@ -161,7 +161,7 @@
               <a href="<?php echo site_url('/company/oakley'); ?>" class="fp-brands__label-box">
                 <div class="fp-brands__label-brand">oakley</div>
                 <div class="fp-brands__label-cta">
-                  <p>Show me products!</p>
+                  <p></p>
                 </div>
               </a>
             </div>
@@ -179,7 +179,7 @@
               <a href="<?php echo site_url('/company/shinola'); ?>" class="fp-brands__label-box">
                 <div class="fp-brands__label-brand">shinola</div>
                 <div class="fp-brands__label-cta">
-                  <p>Show me products!</p>
+                  <p></p>
                 </div>
               </a>
             </div>
@@ -197,7 +197,7 @@
               <a href="<?php echo site_url('/company/red-wing-shoes'); ?>" class="fp-brands__label-box">
                 <div class="fp-brands__label-brand">red wing shoes</div>
                 <div class="fp-brands__label-cta">
-                  <p>Show me products!</p>
+                  <p></p>
                 </div>
               </a>
             </div>
@@ -215,7 +215,7 @@
               <a href="<?php echo site_url('/company/leatherman'); ?>" class="fp-brands__label-box">
                 <div class="fp-brands__label-brand">leatherman</div>
                 <div class="fp-brands__label-cta">
-                  <p>Show me products!</p>
+                  <p></p>
                 </div>
               </a>
             </div>
@@ -233,7 +233,7 @@
               <a href="<?php echo site_url('/company/trayvax'); ?>" class="fp-brands__label-box">
                 <div class="fp-brands__label-brand">trayvax</div>
                 <div class="fp-brands__label-cta">
-                  <p>Show me products!</p>
+                  <p></p>
                 </div>
               </a>
             </div>
@@ -251,7 +251,7 @@
               <a href="<?php echo site_url('/company/serta'); ?>" class="fp-brands__label-box">
                 <div class="fp-brands__label-brand">serta</div>
                 <div class="fp-brands__label-cta">
-                  <p>Show me products!</p>
+                  <p></p>
                 </div>
               </a>
             </div>
@@ -269,7 +269,7 @@
               <a href="<?php echo site_url('/company/lodge-cast-iron'); ?>" class="fp-brands__label-box">
                 <div class="fp-brands__label-brand">lodge cast iron</div>
                 <div class="fp-brands__label-cta">
-                  <p>Show me products!</p>
+                  <p></p>
                 </div>
               </a>
             </div>
@@ -287,7 +287,7 @@
               <a href="<?php echo site_url('/company/american-optical'); ?>" class="fp-brands__label-box">
                 <div class="fp-brands__label-brand">american optical</div>
                 <div class="fp-brands__label-cta">
-                  <p>Show me products!</p>
+                  <p></p>
                 </div>
               </a>
             </div>
@@ -305,7 +305,7 @@
               <a href="<?php echo site_url('/company/yankee-candle'); ?>" class="fp-brands__label-box">
                 <div class="fp-brands__label-brand">yankee candle</div>
                 <div class="fp-brands__label-cta">
-                  <p>Show me products!</p>
+                  <p></p>
                 </div>
               </a>
             </div>
@@ -323,7 +323,7 @@
               <a href="<?php echo site_url('/company/libman'); ?>" class="fp-brands__label-box">
                 <div class="fp-brands__label-brand">libman</div>
                 <div class="fp-brands__label-cta">
-                  <p>Show me products!</p>
+                  <p></p>
                 </div>
               </a>
             </div>
